@@ -1,0 +1,11 @@
+[
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "python.two_sum",
+        "description": "python.two_sum",
+        "peekOfCode": "def run(nums, target):\n    nums_index = {}\n    for index, i in enumerate(nums):\n        complement = target - i\n        if complement in nums_index:\n            return [nums_index[complement], index]\n        nums_index[i] = index\nif __name__ == \"__main__\":\n    nums = [2, 7, 11, 15]\n    target = 9",
+        "detail": "python.two_sum",
+        "documentation": {}
+    }
+]
