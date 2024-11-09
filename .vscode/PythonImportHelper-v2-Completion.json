@@ -1,5 +1,23 @@
 [
     {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "python.palindrome_number",
+        "description": "python.palindrome_number",
+        "peekOfCode": "def is_palindrome(number):\n    original_number = number\n    compare_number = 0\n    while number > 0:\n        end_number = number % 10\n        compare_number = compare_number * 10 + end_number\n        number //= 10\n    return original_number == compare_number\nif __name__ == \"__main__\":\n    result = is_palindrome(121)",
+        "detail": "python.palindrome_number",
+        "documentation": {}
+    },
+    {
+        "label": "roman_to_integer",
+        "kind": 2,
+        "importPath": "python.roman_to_integer",
+        "description": "python.roman_to_integer",
+        "peekOfCode": "def roman_to_integer(roman: str):\n    roman_numbers = {\n        \"I\": 1,\n        \"V\": 5,\n        \"X\": 10,\n        \"L\": 50,\n        \"C\": 100,\n        \"D\": 500,\n        \"M\": 1000,\n    }",
+        "detail": "python.roman_to_integer",
+        "documentation": {}
+    },
+    {
         "label": "run",
         "kind": 2,
         "importPath": "python.two_sum",
