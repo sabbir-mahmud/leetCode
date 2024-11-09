@@ -26,6 +26,15 @@
         "documentation": {}
     },
     {
+        "label": "longest_prefix",
+        "kind": 2,
+        "importPath": "python.longest_common_prefix",
+        "description": "python.longest_common_prefix",
+        "peekOfCode": "def longest_prefix(strs: list[str]):\n    strs.sort()\n    prefix = \"\"\n    for i in range(len(strs[0])):\n        if strs[0][i] != strs[-1][i]:\n            return prefix\n        prefix += strs[0][i]\n    return prefix\nif __name__ == \"__main__\":\n    strs = [\"flower\", \"flow\", \"flight\"]",
+        "detail": "python.longest_common_prefix",
+        "documentation": {}
+    },
+    {
         "label": "is_palindrome",
         "kind": 2,
         "importPath": "python.palindrome_number",
