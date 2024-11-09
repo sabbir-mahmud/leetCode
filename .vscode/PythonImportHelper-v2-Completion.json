@@ -1,5 +1,31 @@
 [
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ListNode",
+        "kind": 6,
+        "importPath": "python.add_two_number",
+        "description": "python.add_two_number",
+        "peekOfCode": "class ListNode:\n    def __init__(self, val=0, next=None):\n        self.val = val\n        self.next = next\n    # Helper function to print the linked list.\n    def __str__(self):\n        result = []\n        node = self\n        while node:\n            result.append(str(node.val))",
+        "detail": "python.add_two_number",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "python.add_two_number",
+        "description": "python.add_two_number",
+        "peekOfCode": "class Solution:\n    def addTwoNumbers(\n        self, l1: Optional[ListNode], l2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        ptr = ListNode(0)\n        s = ptr\n        c = 0\n        while l1 or l2 or c:\n            if l1:\n                c += l1.val",
+        "detail": "python.add_two_number",
+        "documentation": {}
+    },
+    {
         "label": "is_palindrome",
         "kind": 2,
         "importPath": "python.palindrome_number",
