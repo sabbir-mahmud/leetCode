@@ -44,6 +44,42 @@
         "documentation": {}
     },
     {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "DSA.double_ll",
+        "description": "DSA.double_ll",
+        "peekOfCode": "class Node:\n    def __init__(self, data, prev=None, next=None):\n        self.prev = prev\n        self.data = data\n        self.next = next\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:",
+        "detail": "DSA.double_ll",
+        "documentation": {}
+    },
+    {
+        "label": "LinkedList",
+        "kind": 6,
+        "importPath": "DSA.double_ll",
+        "description": "DSA.double_ll",
+        "peekOfCode": "class LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)\n            return\n        itr = self.head\n        while itr.next:\n            itr = itr.next",
+        "detail": "DSA.double_ll",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "DSA.single_ll",
+        "description": "DSA.single_ll",
+        "peekOfCode": "class Node:\n    def __init__(self, data, next=None):\n        self.data = data\n        self.next = next\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)",
+        "detail": "DSA.single_ll",
+        "documentation": {}
+    },
+    {
+        "label": "LinkedList",
+        "kind": 6,
+        "importPath": "DSA.single_ll",
+        "description": "DSA.single_ll",
+        "peekOfCode": "class LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)\n            return\n        itr = self.head\n        while itr.next:\n            itr = itr.next",
+        "detail": "DSA.single_ll",
+        "documentation": {}
+    },
+    {
         "label": "ListNode",
         "kind": 6,
         "importPath": "python.add_two_number",
