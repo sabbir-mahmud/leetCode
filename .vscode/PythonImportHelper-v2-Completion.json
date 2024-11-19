@@ -107,6 +107,15 @@
         "documentation": {}
     },
     {
+        "label": "mergeAlternately",
+        "kind": 2,
+        "importPath": "python.merge_string_alternately",
+        "description": "python.merge_string_alternately",
+        "peekOfCode": "def mergeAlternately(word1: str, word2: str) -> str:\n    ans = \"\"\n    loop_obj = word1 if len(word1) > len(word2) else word2\n    for i in range(len(loop_obj)):\n        if i < len(word1):\n            ans += word1[i]\n        if i < len(word2):\n            ans += word2[i]\n    return ans\nif __name__ == \"__main__\":",
+        "detail": "python.merge_string_alternately",
+        "documentation": {}
+    },
+    {
         "label": "is_palindrome",
         "kind": 2,
         "importPath": "python.palindrome_number",
