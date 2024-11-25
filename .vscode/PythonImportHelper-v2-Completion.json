@@ -80,6 +80,15 @@
         "documentation": {}
     },
     {
+        "label": "gcdOfStrings",
+        "kind": 2,
+        "importPath": "python.GCD_string",
+        "description": "python.GCD_string",
+        "peekOfCode": "def gcdOfStrings(self, str1: str, str2: str) -> str:\n    from math import gcd\n    if str1 + str2 == str2 + str1:\n        return str1[: gcd(len(str1), len(str2))]\n    return \"\"",
+        "detail": "python.GCD_string",
+        "documentation": {}
+    },
+    {
         "label": "ListNode",
         "kind": 6,
         "importPath": "python.add_two_number",
