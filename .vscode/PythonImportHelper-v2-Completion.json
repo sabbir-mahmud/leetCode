@@ -1,5 +1,29 @@
 [
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -8,39 +32,138 @@
         "documentation": {}
     },
     {
-        "label": "create_list",
+        "label": "monthly_expenses",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "monthly_expenses = [2200, 2350, 2600, 2130, 2190]\n# 1. Extra dollars spent in February compared to January\nextra_feb = monthly_expenses[1] - monthly_expenses[0]\nprint(f\"Extra spent in Feb compared to Jan: {extra_feb} dollars\")\n# 2. Total expenses in the first quarter (Jan-Mar)\nq1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "extra_feb",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "extra_feb = monthly_expenses[1] - monthly_expenses[0]\nprint(f\"Extra spent in Feb compared to Jan: {extra_feb} dollars\")\n# 2. Total expenses in the first quarter (Jan-Mar)\nq1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")\nelse:\n    print(\"No month with exactly $2000 spent\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "q1_expenses",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "q1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")\nelse:\n    print(\"No month with exactly $2000 spent\")\n# 4. Add June expenses of $1980\nmonthly_expenses.append(1980)\nprint(f\"Expenses after adding June: {monthly_expenses}\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "heroes",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "heroes = [\"spider man\", \"thor\", \"hulk\", \"iron man\", \"captain america\"]\n# 1. Length of the heroes list\nprint(f\"Number of heroes: {len(heroes)}\")\n# 2. Add 'black panther' at the end of the list\nheroes.append(\"black panther\")\nprint(f\"Heroes after adding 'black panther': {heroes}\")\n# 3. Move 'black panther' to be after 'hulk'\nheroes.remove(\"black panther\")\nheroes.insert(3, \"black panther\")\nprint(f\"Heroes after rearranging: {heroes}\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "heroes[1:3]",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "heroes[1:3] = [\"doctor strange\"]\nprint(f\"Heroes after replacement: {heroes}\")\n# 5. Sort the heroes alphabetically\nheroes.sort()\nprint(f\"Heroes sorted alphabetically: {heroes}\")\n# Exercise 03: Odd Numbers List\n# Generate a list of odd numbers up to a user-defined maximum\nmax_num = int(input(\"Enter the max number: \"))\nodd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "max_num",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "max_num = int(input(\"Enter the max number: \"))\nodd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "odd_numbers",
+        "kind": 5,
+        "importPath": "DSA.array",
+        "description": "DSA.array",
+        "peekOfCode": "odd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
+        "detail": "DSA.array",
+        "documentation": {}
+    },
+    {
+        "label": "constant_time_example",
         "kind": 2,
-        "importPath": "DSA.array",
-        "description": "DSA.array",
-        "peekOfCode": "def create_list():\n    max_number = int(input(\"Enter number --> \"))\n    odds = []\n    for i in range(1, max_number + 1):\n        if i % 2 == 0:\n            print(i)\n            odds.append(i)\n    print(odds)\n    return\ncreate_list()",
-        "detail": "DSA.array",
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def constant_time_example(arr):\n    \"\"\"\n    O(1) - Constant Time\n    Accessing an element in an array by index.\n    How to calculate:\n    - Only one operation is performed irrespective of input size.\n    Time Complexity: O(1)\n    Space Complexity: O(1)\n    \"\"\"\n    return arr[0]  # Always takes the same amount of time",
+        "detail": "DSA.bigO",
         "documentation": {}
     },
     {
-        "label": "expenses",
-        "kind": 5,
-        "importPath": "DSA.array",
-        "description": "DSA.array",
-        "peekOfCode": "expenses = [2200, 2350, 2600, 2130, 2190]\nprint(f\"extra spent compare to January --> {expenses[1] - expenses[0]}\")\nprint(f\"expense of first quarter --> \", expenses[0] + expenses[1] + expenses[2])\nfor i in expenses:\n    if i == 2000:\n        print(\"exactly 2000 dollars match found\")\n    else:\n        print(\"exactly 2000 dollars not match\")\n# * Adding June month expense\nexpenses.append(1980)",
-        "detail": "DSA.array",
+        "label": "logarithmic_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def logarithmic_time_example(arr, target):\n    \"\"\"\n    O(log n) - Logarithmic Time\n    Binary search implementation.\n    How to calculate:\n    - The array is repeatedly divided into halves until the target is found or the array is empty.\n    - Logarithmic operations occur due to halving (base 2 logarithm).\n    Time Complexity: O(log n)\n    Space Complexity: O(1)\n    \"\"\"",
+        "detail": "DSA.bigO",
         "documentation": {}
     },
     {
-        "label": "heros",
-        "kind": 5,
-        "importPath": "DSA.array",
-        "description": "DSA.array",
-        "peekOfCode": "heros = [\"spider man\", \"thor\", \"hulk\", \"iron man\", \"captain america\"]\nprint(f\"Length of the list is --> {len(heros)}\")\n# * Add 'black panther' at the end of this list\nheros.append(\"black panther\")\n# * Add 'black panther' after 'hulk'\nheros.pop()\nheros.insert(3, \"black panther\")\nprint(heros)\n# * replace thor and hulk with doctor strange\nheros[1:3] = [\"doctor strange\"]",
-        "detail": "DSA.array",
+        "label": "linear_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def linear_time_example(arr):\n    \"\"\"\n    O(n) - Linear Time\n    Iterating through an array.\n    How to calculate:\n    - A single loop iterates through all elements once.\n    - The number of iterations is proportional to the size of the input (n).\n    Time Complexity: O(n)\n    Space Complexity: O(1)\n    \"\"\"",
+        "detail": "DSA.bigO",
         "documentation": {}
     },
     {
-        "label": "heros[1:3]",
+        "label": "linearithmic_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def linearithmic_time_example(arr):\n    \"\"\"\n    O(n log n) - Linearithmic Time\n    Using Python's built-in sorted function (Timsort).\n    How to calculate:\n    - Sorting involves multiple passes through the input (n) combined with merging (log n).\n    Time Complexity: O(n log n)\n    Space Complexity: O(n)\n    \"\"\"\n    return sorted(arr)",
+        "detail": "DSA.bigO",
+        "documentation": {}
+    },
+    {
+        "label": "quadratic_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def quadratic_time_example(arr):\n    \"\"\"\n    O(n^2) - Quadratic Time\n    Nested loops iterating over the same input.\n    How to calculate:\n    - Outer loop runs n times.\n    - Inner loop runs n times for each iteration of the outer loop.\n    - Total operations: n * n = n^2.\n    Time Complexity: O(n^2)\n    Space Complexity: O(1)",
+        "detail": "DSA.bigO",
+        "documentation": {}
+    },
+    {
+        "label": "exponential_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def exponential_time_example(n):\n    \"\"\"\n    O(2^n) - Exponential Time\n    Fibonacci sequence using recursion.\n    How to calculate:\n    - Each function call generates two more calls, doubling the work at each level.\n    - Total operations grow as powers of 2.\n    Time Complexity: O(2^n)\n    Space Complexity: O(n) (due to recursion stack)\n    \"\"\"",
+        "detail": "DSA.bigO",
+        "documentation": {}
+    },
+    {
+        "label": "factorial_time_example",
+        "kind": 2,
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "def factorial_time_example(arr):\n    \"\"\"\n    O(n!) - Factorial Time\n    Generating all permutations of an array.\n    How to calculate:\n    - For n elements, there are n! permutations.\n    - Recursive backtracking or library functions iterate through all possible arrangements.\n    Time Complexity: O(n!)\n    Space Complexity: O(n!) (to store permutations)\n    \"\"\"",
+        "detail": "DSA.bigO",
+        "documentation": {}
+    },
+    {
+        "label": "DATA_STRUCTURES_PERFORMANCE",
         "kind": 5,
-        "importPath": "DSA.array",
-        "description": "DSA.array",
-        "peekOfCode": "heros[1:3] = [\"doctor strange\"]\nprint(heros)\n# * Sort the heros list in alphabetical order\nheros.sort()\nprint(heros)\n\"\"\"\nCreate a list of all odd numbers between 1 and a max number. Max number is something you need to take from a user using input() function\n\"\"\"\ndef create_list():\n    max_number = int(input(\"Enter number --> \"))",
-        "detail": "DSA.array",
+        "importPath": "DSA.bigO",
+        "description": "DSA.bigO",
+        "peekOfCode": "DATA_STRUCTURES_PERFORMANCE = {\n    \"Array\": {\"Access\": \"O(1)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(n)\"},\n    \"Linked List\": {\"Access\": \"O(n)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(1)\"},\n    \"Hash Table\": {\"Access\": \"O(1)\", \"Search\": \"O(1)\", \"Insert/Delete\": \"O(1)\"},\n    \"Binary Search Tree\": {\n        \"Access\": \"O(log n)\",\n        \"Search\": \"O(log n)\",\n        \"Insert/Delete\": \"O(log n)\",\n    },\n    \"Heap\": {\"Access\": \"O(1)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(log n)\"},",
+        "detail": "DSA.bigO",
         "documentation": {}
     },
     {
@@ -48,17 +171,80 @@
         "kind": 6,
         "importPath": "DSA.double_ll",
         "description": "DSA.double_ll",
-        "peekOfCode": "class Node:\n    def __init__(self, data, prev=None, next=None):\n        self.prev = prev\n        self.data = data\n        self.next = next\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:",
+        "peekOfCode": "class Node:\n    \"\"\"\n    Represents a single node in the doubly linked list.\n    Attributes:\n        data: The data stored in the node.\n        next: A reference to the next node in the linked list.\n        prev: A reference to the previous node in the linked list.\n    \"\"\"\n    def __init__(self, data, next=None, prev=None):\n        \"\"\"",
         "detail": "DSA.double_ll",
         "documentation": {}
     },
     {
-        "label": "LinkedList",
+        "label": "DoublyLinkedList",
         "kind": 6,
         "importPath": "DSA.double_ll",
         "description": "DSA.double_ll",
-        "peekOfCode": "class LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)\n            return\n        itr = self.head\n        while itr.next:\n            itr = itr.next",
+        "peekOfCode": "class DoublyLinkedList:\n    \"\"\"\n    Implements a doubly linked list with various utility methods for insertion, deletion, traversal, and more.\n    Attributes:\n        head: Points to the first node in the linked list.\n        tail: Points to the last node in the linked list, allowing efficient operations at the end of the list.\n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        Initialize an empty doubly linked list with head and tail set to None.",
         "detail": "DSA.double_ll",
+        "documentation": {}
+    },
+    {
+        "label": "HashTable",
+        "kind": 6,
+        "importPath": "DSA.hash_table",
+        "description": "DSA.hash_table",
+        "peekOfCode": "class HashTable:\n    def __init__(self, size=100) -> None:\n        \"\"\"\n        Initialize the hash table with a given size.\n        The table is represented as a list of empty lists to handle collisions using chaining.\n        :param size: The size of the hash table (default: 100).\n        \"\"\"\n        self.size = size\n        self.table = [[] for _ in range(self.size)]\n    def _get_hash(self, key):",
+        "detail": "DSA.hash_table",
+        "documentation": {}
+    },
+    {
+        "label": "hash_table",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "hash_table = {\"mar1\": 1, \"mar2\": 3, \"mar3\": 4, \"mar4\": 4}\n# Access and print a specific item\nprint(f\"Get item: {hash_table['mar1']}\")\n# Update a value in the hash table\nhash_table[\"mar1\"] = 3\nprint(f\"Updated item value for 'mar1': {hash_table['mar1']}\")\n# Print all keys\nprint(f\"Keys: {list(hash_table.keys())}\")\n# Print all values\nprint(f\"Values: {list(hash_table.values())}\")",
+        "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "hash_table[\"mar1\"]",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "hash_table[\"mar1\"] = 3\nprint(f\"Updated item value for 'mar1': {hash_table['mar1']}\")\n# Print all keys\nprint(f\"Keys: {list(hash_table.keys())}\")\n# Print all values\nprint(f\"Values: {list(hash_table.values())}\")\n# Iterate over and print all key-value pairs\nprint(\"All key-value pairs:\")\nfor key, value in hash_table.items():\n    print(f\"Key: {key} --> Value: {value}\")",
+        "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "weather",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "weather = {}\n# Path to the CSV file\nfile_path = \"/Users/sabbir/work/hand-notes/DSA/hashTable/nyc_weather.csv\"\n# Open the file in read mode\nwith open(file_path, mode=\"r\") as f:\n    # Skip the header row if the file contains column names\n    next(f)\n    # Iterate through each line in the file\n    for line in f:\n        try:",
+        "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "file_path = \"/Users/sabbir/work/hand-notes/DSA/hashTable/nyc_weather.csv\"\n# Open the file in read mode\nwith open(file_path, mode=\"r\") as f:\n    # Skip the header row if the file contains column names\n    next(f)\n    # Iterate through each line in the file\n    for line in f:\n        try:\n            # Remove leading/trailing spaces and split the line into key (date) and value (temperature)\n            key, value = line.strip().split(\",\")",
+        "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "temperatures",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "temperatures = list(weather.values())[:10]\n# Find the maximum temperature in the first 10 days\nmax_temp = max(temperatures)\n# Print the result\nprint(\"Max temperature -->\", max_temp)",
+        "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "max_temp",
+        "kind": 5,
+        "importPath": "DSA.hash_table_excercise",
+        "description": "DSA.hash_table_excercise",
+        "peekOfCode": "max_temp = max(temperatures)\n# Print the result\nprint(\"Max temperature -->\", max_temp)",
+        "detail": "DSA.hash_table_excercise",
         "documentation": {}
     },
     {
@@ -66,7 +252,7 @@
         "kind": 6,
         "importPath": "DSA.single_ll",
         "description": "DSA.single_ll",
-        "peekOfCode": "class Node:\n    def __init__(self, data, next=None):\n        self.data = data\n        self.next = next\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)",
+        "peekOfCode": "class Node:\n    \"\"\"\n    Represents a single node in the linked list.\n    Attributes:\n        data: The data value stored in the node.\n        next: A reference to the next node in the linked list.\n    \"\"\"\n    def __init__(self, data, next=None):\n        self.data = data\n        self.next = next",
         "detail": "DSA.single_ll",
         "documentation": {}
     },
@@ -75,8 +261,26 @@
         "kind": 6,
         "importPath": "DSA.single_ll",
         "description": "DSA.single_ll",
-        "peekOfCode": "class LinkedList:\n    def __init__(self):\n        self.head = None\n    def insert(self, data):\n        if self.head is None:\n            self.head = Node(data)\n            return\n        itr = self.head\n        while itr.next:\n            itr = itr.next",
+        "peekOfCode": "class LinkedList:\n    \"\"\"\n    Implements a singly linked list with various utility methods for insertion, deletion, and traversal.\n    Attributes:\n        head: Points to the first node in the linked list.\n    \"\"\"\n    def __init__(self):\n        self.head = None  # Initialize an empty linked list\n    def insert_at_beg(self, data):\n        \"\"\"",
         "detail": "DSA.single_ll",
+        "documentation": {}
+    },
+    {
+        "label": "Stack",
+        "kind": 6,
+        "importPath": "DSA.stack",
+        "description": "DSA.stack",
+        "peekOfCode": "class Stack(Generic[T]):\n    def __init__(self):\n        \"\"\"Initialize the stack with an empty deque container.\"\"\"\n        # A deque is a double-ended queue, providing fast append and pop operations from both ends.\n        # It's ideal for implementing a stack since both push and pop operations are O(1) in a deque.\n        self._container = deque()\n    def push(self, val: T) -> None:\n        \"\"\"\n        Push a value onto the stack.\n        Args:",
+        "detail": "DSA.stack",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "DSA.stack",
+        "description": "DSA.stack",
+        "peekOfCode": "T = TypeVar(\"T\")\nclass Stack(Generic[T]):\n    def __init__(self):\n        \"\"\"Initialize the stack with an empty deque container.\"\"\"\n        # A deque is a double-ended queue, providing fast append and pop operations from both ends.\n        # It's ideal for implementing a stack since both push and pop operations are O(1) in a deque.\n        self._container = deque()\n    def push(self, val: T) -> None:\n        \"\"\"\n        Push a value onto the stack.",
+        "detail": "DSA.stack",
         "documentation": {}
     },
     {
