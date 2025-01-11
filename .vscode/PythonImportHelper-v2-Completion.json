@@ -1,5 +1,31 @@
 [
     {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "deque",
         "importPath": "collections",
         "description": "collections",
@@ -245,6 +271,33 @@
         "description": "DSA.hash_table_excercise",
         "peekOfCode": "max_temp = max(temperatures)\n# Print the result\nprint(\"Max temperature -->\", max_temp)",
         "detail": "DSA.hash_table_excercise",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "kind": 6,
+        "importPath": "DSA.queue",
+        "description": "DSA.queue",
+        "peekOfCode": "class Queue:\n    \"\"\"\n    A simple queue implementation using deque from the collections module.\n    It supports standard queue operations like enqueue, dequeue,\n    checking if the queue is empty, and getting the queue size.\n    \"\"\"\n    def __init__(self):\n        # Initialize the queue with an empty deque.\n        # deque is a high-performance list for adding/removing elements from both ends.\n        self.buffer = deque()",
+        "detail": "DSA.queue",
+        "documentation": {}
+    },
+    {
+        "label": "binary_writer",
+        "kind": 2,
+        "importPath": "DSA.queue",
+        "description": "DSA.queue",
+        "peekOfCode": "def binary_writer(number):\n    \"\"\"\n    Generates binary numbers from 1 to 'number' using a queue-based approach.\n    This approach generates binary numbers in the order by enqueuing and dequeuing.\n    Args:\n        number (int): The number of binary numbers to generate.\n    \"\"\"\n    queue = Queue()\n    # Start with the binary number '1'\n    queue.enqueue(\"1\")",
+        "detail": "DSA.queue",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "DSA.queue",
+        "description": "DSA.queue",
+        "peekOfCode": "def main():\n    \"\"\"\n    Demonstrates the use of the Queue class with enqueue, dequeue, size,\n    and empty checks, along with binary number generation and threaded food order simulation.\n    \"\"\"\n    # Create a new queue instance\n    queue = Queue()\n    # Enqueue elements\n    print(\"Enqueuing elements:\")\n    queue.enqueue(10)",
+        "detail": "DSA.queue",
         "documentation": {}
     },
     {
