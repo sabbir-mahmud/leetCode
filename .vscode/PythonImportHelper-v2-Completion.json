@@ -337,6 +337,60 @@
         "documentation": {}
     },
     {
+        "label": "TreeNode",
+        "kind": 6,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "class TreeNode:\n    def __init__(self, data):\n        \"\"\"Initialize a tree node with data, children, and a parent.\"\"\"\n        self.data = data\n        self.children = []\n        self.parent = None\n    def add_child(self, child):\n        \"\"\"Add a child node to the current node.\"\"\"\n        child.parent = self\n        self.children.append(child)",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
+        "label": "HierarchyTreeNode",
+        "kind": 6,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "class HierarchyTreeNode:\n    def __init__(self, name, designation):\n        \"\"\"Initialize a tree node with a name, designation, children, and a parent.\"\"\"\n        self.name = name\n        self.designation = designation\n        self.children = []\n        self.parent = None\n    def add_child(self, child):\n        \"\"\"Add a child node to the current node.\"\"\"\n        child.parent = self",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
+        "label": "LocationTreeNode",
+        "kind": 6,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "class LocationTreeNode(TreeNode):\n    def print_tree(self, depth):\n        \"\"\"Print the tree structure up to the specified depth.\"\"\"\n        if self.get_level() <= depth:\n            prefix = \" \" * self.get_level() * 3 + \"|__\" if self.parent else \"\"\n            print(prefix + self.data)\n        for child in self.children:\n            child.print_tree(depth)\ndef build_location_tree():\n    \"\"\"Build and return a tree representing geographical locations.\"\"\"",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
+        "label": "build_product_tree",
+        "kind": 2,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "def build_product_tree():\n    \"\"\"Build and display a tree representing product categories.\"\"\"\n    root = TreeNode(\"Electronics\")\n    # Adding categories and products\n    laptop = TreeNode(\"Laptop\")\n    laptop.add_child(TreeNode(\"Mac\"))\n    laptop.add_child(TreeNode(\"Surface\"))\n    laptop.add_child(TreeNode(\"Thinkpad\"))\n    cellphone = TreeNode(\"Cell Phone\")\n    cellphone.add_child(TreeNode(\"iPhone\"))",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
+        "label": "build_management_tree",
+        "kind": 2,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "def build_management_tree():\n    \"\"\"Build and return a tree representing a company hierarchy.\"\"\"\n    # CTO Hierarchy\n    infra_head = HierarchyTreeNode(\"Vishwa\", \"Infrastructure Head\")\n    infra_head.add_child(HierarchyTreeNode(\"Dhaval\", \"Cloud Manager\"))\n    infra_head.add_child(HierarchyTreeNode(\"Abhijit\", \"App Manager\"))\n    cto = HierarchyTreeNode(\"Chinmay\", \"CTO\")\n    cto.add_child(infra_head)\n    cto.add_child(HierarchyTreeNode(\"Aamir\", \"Application Head\"))\n    # HR hierarchy",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
+        "label": "build_location_tree",
+        "kind": 2,
+        "importPath": "DSA.tree",
+        "description": "DSA.tree",
+        "peekOfCode": "def build_location_tree():\n    \"\"\"Build and return a tree representing geographical locations.\"\"\"\n    root = LocationTreeNode(\"Global\")\n    india = LocationTreeNode(\"India\")\n    gujarat = LocationTreeNode(\"Gujarat\")\n    gujarat.add_child(LocationTreeNode(\"Ahmedabad\"))\n    gujarat.add_child(LocationTreeNode(\"Baroda\"))\n    karnataka = LocationTreeNode(\"Karnataka\")\n    karnataka.add_child(LocationTreeNode(\"Bangluru\"))\n    karnataka.add_child(LocationTreeNode(\"Mysore\"))",
+        "detail": "DSA.tree",
+        "documentation": {}
+    },
+    {
         "label": "gcdOfStrings",
         "kind": 2,
         "importPath": "python.GCD_string",
