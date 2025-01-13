@@ -193,6 +193,24 @@
         "documentation": {}
     },
     {
+        "label": "BinarySearchTreeNode",
+        "kind": 6,
+        "importPath": "DSA.binary_tree",
+        "description": "DSA.binary_tree",
+        "peekOfCode": "class BinarySearchTreeNode:\n    def __init__(self, data):\n        \"\"\"\n        Initialize a Binary Search Tree node.\n        :param data: Value to store in the node.\n        \"\"\"\n        self.data = data  # Node value\n        self.left = None  # Left child (smaller values)\n        self.right = None  # Right child (larger values)\n    def add_child(self, data):",
+        "detail": "DSA.binary_tree",
+        "documentation": {}
+    },
+    {
+        "label": "build_tree",
+        "kind": 2,
+        "importPath": "DSA.binary_tree",
+        "description": "DSA.binary_tree",
+        "peekOfCode": "def build_tree(elements):\n    \"\"\"\n    Build a binary search tree from a list of elements.\n    :param elements: List of elements to add to the tree.\n    :return: Root node of the binary search tree.\n    \"\"\"\n    root = BinarySearchTreeNode(elements[0])\n    for element in elements[1:]:\n        root.add_child(element)\n    return root",
+        "detail": "DSA.binary_tree",
+        "documentation": {}
+    },
+    {
         "label": "Node",
         "kind": 6,
         "importPath": "DSA.double_ll",
