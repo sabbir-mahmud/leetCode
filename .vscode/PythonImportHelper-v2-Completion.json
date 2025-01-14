@@ -58,6 +58,42 @@
         "documentation": {}
     },
     {
+        "label": "binary_search_using_loop",
+        "kind": 2,
+        "importPath": "DSA.algo.binary_search",
+        "description": "DSA.algo.binary_search",
+        "peekOfCode": "def binary_search_using_loop(arr: list, find_num):\n    \"\"\"\n    Perform binary search iteratively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Sort the array to ensure binary search can be applied.\n    2. Initialize two pointers, `left_index` and `right_index`, representing the search boundaries.\n    3. Calculate the middle index and compare the middle element with the target (`find_num`).\n    4. Narrow down the search range based on the comparison result.\n    5. Repeat until the element is found or the range becomes invalid.\n    :param arr: List of integers to search within",
+        "detail": "DSA.algo.binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "binary_search_using_recursion",
+        "kind": 2,
+        "importPath": "DSA.algo.binary_search",
+        "description": "DSA.algo.binary_search",
+        "peekOfCode": "def binary_search_using_recursion(arr: list, find_num, left_index, right_index):\n    \"\"\"\n    Perform binary search recursively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Base Case: If the search range is invalid (`right_index < left_index`), return -1.\n    2. Calculate the middle index of the current search range.\n    3. Compare the middle element with the target (`find_num`).\n    4. If the middle element matches the target, return its index.\n    5. Otherwise, recursively adjust the search range based on the comparison.\n    :param arr: List of integers to search within",
+        "detail": "DSA.algo.binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "DSA.algo.binary_search",
+        "description": "DSA.algo.binary_search",
+        "peekOfCode": "arr = [34, 55, 623, 344, 124, 1324, 533, 6565, 122, 345, 665, 12]\ndef binary_search_using_loop(arr: list, find_num):\n    \"\"\"\n    Perform binary search iteratively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Sort the array to ensure binary search can be applied.\n    2. Initialize two pointers, `left_index` and `right_index`, representing the search boundaries.\n    3. Calculate the middle index and compare the middle element with the target (`find_num`).\n    4. Narrow down the search range based on the comparison result.\n    5. Repeat until the element is found or the range becomes invalid.",
+        "detail": "DSA.algo.binary_search",
+        "documentation": {}
+    },
+    {
+        "label": "idx",
+        "kind": 5,
+        "importPath": "DSA.algo.binary_search",
+        "description": "DSA.algo.binary_search",
+        "peekOfCode": "idx = binary_search_using_recursion(arr, 6565, 0, len(arr) - 1)\nprint(f\"Element found at index: {idx}\")  # Output the result, -1 if not found",
+        "detail": "DSA.algo.binary_search",
+        "documentation": {}
+    },
+    {
         "label": "monthly_expenses",
         "kind": 5,
         "importPath": "DSA.array",
