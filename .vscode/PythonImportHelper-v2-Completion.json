@@ -94,6 +94,24 @@
         "documentation": {}
     },
     {
+        "label": "bubble_sort_using_loop",
+        "kind": 2,
+        "importPath": "DSA.algo.bubble_sort",
+        "description": "DSA.algo.bubble_sort",
+        "peekOfCode": "def bubble_sort_using_loop(arr: list):\n    \"\"\"\n    Sorts an array in ascending order using the Bubble Sort algorithm.\n    Parameters:\n        arr (list): The list of integers to sort.\n    Steps:\n    1. Compare adjacent elements in the array.\n    2. Swap them if the left element is greater than the right element.\n    3. Continue this process for all elements in decreasing order of pass length.\n    4. Break early if no swaps are made during a pass (array is already sorted).",
+        "detail": "DSA.algo.bubble_sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "DSA.algo.bubble_sort",
+        "description": "DSA.algo.bubble_sort",
+        "peekOfCode": "arr = [34, 55, 623, 344, 124, 1324, 533, 6565, 122, 345, 665, 12]\n# Function to implement Bubble Sort using nested loops\ndef bubble_sort_using_loop(arr: list):\n    \"\"\"\n    Sorts an array in ascending order using the Bubble Sort algorithm.\n    Parameters:\n        arr (list): The list of integers to sort.\n    Steps:\n    1. Compare adjacent elements in the array.\n    2. Swap them if the left element is greater than the right element.",
+        "detail": "DSA.algo.bubble_sort",
+        "documentation": {}
+    },
+    {
         "label": "monthly_expenses",
         "kind": 5,
         "importPath": "DSA.array",
