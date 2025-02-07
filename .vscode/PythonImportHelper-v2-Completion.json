@@ -116,7 +116,7 @@
         "kind": 2,
         "importPath": "DSA.algo.quick_sort_hoare",
         "description": "DSA.algo.quick_sort_hoare",
-        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    \"\"\"\n    arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,\n    and elements greater than the pivot are moved to its right.",
+        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    \"\"\"\n    if a != b:\n        arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,",
         "detail": "DSA.algo.quick_sort_hoare",
         "documentation": {}
     },
@@ -136,6 +136,33 @@
         "description": "DSA.algo.quick_sort_hoare",
         "peekOfCode": "def quick_sort(elements, start, end):\n    \"\"\"\n    Recursively applies quicksort on subarrays divided by the pivot.\n    \"\"\"\n    if start < end:\n        pi = partition(elements, start, end)  # Partition the array\n        quick_sort(elements, start, pi - 1)  # Recursively sort left partition\n        quick_sort(elements, pi + 1, end)  # Recursively sort right partition\nif __name__ == \"__main__\":\n    elements = [11, 9, 8, 29, 7, 2, 33, 15, 28]",
         "detail": "DSA.algo.quick_sort_hoare",
+        "documentation": {}
+    },
+    {
+        "label": "swap",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_lumoto",
+        "description": "DSA.algo.quick_sort_lumoto",
+        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    This operation is only performed if the indices are different to avoid unnecessary writes.\n    \"\"\"\n    if a != b:\n        arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the last element as the pivot.",
+        "detail": "DSA.algo.quick_sort_lumoto",
+        "documentation": {}
+    },
+    {
+        "label": "partition",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_lumoto",
+        "description": "DSA.algo.quick_sort_lumoto",
+        "peekOfCode": "def partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the last element as the pivot.\n    Elements smaller than or equal to the pivot are moved to the left,\n    and elements greater than the pivot are moved to the right.\n    Parameters:\n    - elements: List of elements to be sorted.\n    - start: Starting index of the partition.\n    - end: Ending index of the partition (pivot index).\n    Returns:",
+        "detail": "DSA.algo.quick_sort_lumoto",
+        "documentation": {}
+    },
+    {
+        "label": "quick_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_lumoto",
+        "description": "DSA.algo.quick_sort_lumoto",
+        "peekOfCode": "def quick_sort(elements, start, end):\n    \"\"\"\n    Implements the Quick Sort algorithm using recursion.\n    Parameters:\n    - elements: List of elements to be sorted.\n    - start: Starting index of the sub-array to sort.\n    - end: Ending index of the sub-array to sort.\n    Quick Sort operates by partitioning the array and recursively sorting the left and right subarrays.\n    \"\"\"\n    if start < end:",
+        "detail": "DSA.algo.quick_sort_lumoto",
         "documentation": {}
     },
     {

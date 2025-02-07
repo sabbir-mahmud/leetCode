@@ -2,7 +2,8 @@ def swap(a, b, arr):
     """
     Swaps the elements at indices `a` and `b` in the array `arr`.
     """
-    arr[a], arr[b] = arr[b], arr[a]
+    if a != b:
+        arr[a], arr[b] = arr[b], arr[a]
 
 
 def partition(elements, start, end):
