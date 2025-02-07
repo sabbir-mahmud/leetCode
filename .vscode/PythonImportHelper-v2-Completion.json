@@ -112,6 +112,33 @@
         "documentation": {}
     },
     {
+        "label": "swap",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_hoare",
+        "description": "DSA.algo.quick_sort_hoare",
+        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    \"\"\"\n    arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,\n    and elements greater than the pivot are moved to its right.",
+        "detail": "DSA.algo.quick_sort_hoare",
+        "documentation": {}
+    },
+    {
+        "label": "partition",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_hoare",
+        "description": "DSA.algo.quick_sort_hoare",
+        "peekOfCode": "def partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,\n    and elements greater than the pivot are moved to its right.\n    Returns the final index of the pivot after partitioning.\n    \"\"\"\n    pivot_index = start  # Choosing the first element as the pivot\n    pivot = elements[pivot_index]\n    while start < end:",
+        "detail": "DSA.algo.quick_sort_hoare",
+        "documentation": {}
+    },
+    {
+        "label": "quick_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.quick_sort_hoare",
+        "description": "DSA.algo.quick_sort_hoare",
+        "peekOfCode": "def quick_sort(elements, start, end):\n    \"\"\"\n    Recursively applies quicksort on subarrays divided by the pivot.\n    \"\"\"\n    if start < end:\n        pi = partition(elements, start, end)  # Partition the array\n        quick_sort(elements, start, pi - 1)  # Recursively sort left partition\n        quick_sort(elements, pi + 1, end)  # Recursively sort right partition\nif __name__ == \"__main__\":\n    elements = [11, 9, 8, 29, 7, 2, 33, 15, 28]",
+        "detail": "DSA.algo.quick_sort_hoare",
+        "documentation": {}
+    },
+    {
         "label": "monthly_expenses",
         "kind": 5,
         "importPath": "DSA.array",
