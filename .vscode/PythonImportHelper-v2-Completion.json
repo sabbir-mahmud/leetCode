@@ -112,6 +112,15 @@
         "documentation": {}
     },
     {
+        "label": "insertion_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.insertion_sort",
+        "description": "DSA.algo.insertion_sort",
+        "peekOfCode": "def insertion_sort(elements):\n    \"\"\"\n    Sorts a list using the insertion sort algorithm.\n    Time Complexity:\n    - Best case (already sorted): O(n)\n    - Worst/Average case: O(n^2)\n    Space Complexity: O(1) (in-place sorting)\n    \"\"\"\n    for i in range(1, len(elements)):\n        anchor = elements[i]  # Element to be placed at the correct position",
+        "detail": "DSA.algo.insertion_sort",
+        "documentation": {}
+    },
+    {
         "label": "swap",
         "kind": 2,
         "importPath": "DSA.algo.quick_sort_hoare",
