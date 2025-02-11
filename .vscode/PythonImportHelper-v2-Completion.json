@@ -121,6 +121,42 @@
         "documentation": {}
     },
     {
+        "label": "merge_two_sorted_lists",
+        "kind": 2,
+        "importPath": "DSA.algo.merge_sort",
+        "description": "DSA.algo.merge_sort",
+        "peekOfCode": "def merge_two_sorted_lists(a, b, arr):\n    \"\"\"\n    Merges two sorted lists 'a' and 'b' into 'arr' in sorted order.\n    Parameters:\n    a (list): First sorted sublist.\n    b (list): Second sorted sublist.\n    arr (list): The main list where the merged elements will be stored.\n    \"\"\"\n    len_a, len_b = len(a), len(b)\n    i = j = k = 0  # Pointers for 'a', 'b', and 'arr'",
+        "detail": "DSA.algo.merge_sort",
+        "documentation": {}
+    },
+    {
+        "label": "merge_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.merge_sort",
+        "description": "DSA.algo.merge_sort",
+        "peekOfCode": "def merge_sort(arr):\n    \"\"\"\n    Sorts the given list 'arr' using the merge sort algorithm.\n    Parameters:\n    arr (list): The list to be sorted.\n    \"\"\"\n    if len(arr) <= 1:\n        return  # Base case: A list of 0 or 1 elements is already sorted\n    mid = len(arr) // 2  # Find the middle index\n    left = arr[:mid]  # Left half",
+        "detail": "DSA.algo.merge_sort",
+        "documentation": {}
+    },
+    {
+        "label": "merge_two_sorted_lists_exercise",
+        "kind": 2,
+        "importPath": "DSA.algo.merge_sort",
+        "description": "DSA.algo.merge_sort",
+        "peekOfCode": "def merge_two_sorted_lists_exercise(left, right, key=\"name\", descending=False):\n    \"\"\"\n    Merges two sorted lists of dictionaries based on a given key.\n    Parameters:\n    left (list): Left sorted list.\n    right (list): Right sorted list.\n    key (str): The dictionary key used for sorting.\n    descending (bool): Sort order (True for descending, False for ascending).\n    Returns:\n    list: Merged sorted list.",
+        "detail": "DSA.algo.merge_sort",
+        "documentation": {}
+    },
+    {
+        "label": "merge_sort_exercise",
+        "kind": 2,
+        "importPath": "DSA.algo.merge_sort",
+        "description": "DSA.algo.merge_sort",
+        "peekOfCode": "def merge_sort_exercise(elements, key=\"name\", descending=False):\n    \"\"\"\n    Sorts a list of dictionaries based on a given key using merge sort.\n    Parameters:\n    elements (list): List of dictionaries to be sorted.\n    key (str): Dictionary key to sort by.\n    descending (bool): Sort order (True for descending, False for ascending).\n    Returns:\n    list: Sorted list of dictionaries.\n    \"\"\"",
+        "detail": "DSA.algo.merge_sort",
+        "documentation": {}
+    },
+    {
         "label": "swap",
         "kind": 2,
         "importPath": "DSA.algo.quick_sort_hoare",
