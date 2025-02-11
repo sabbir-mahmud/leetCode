@@ -211,6 +211,15 @@
         "documentation": {}
     },
     {
+        "label": "shell_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.shell_sort",
+        "description": "DSA.algo.shell_sort",
+        "peekOfCode": "def shell_sort(arr):\n    \"\"\"\n    Sorts the given list 'arr' using the Shell Sort algorithm.\n    Shell Sort is an optimized version of insertion sort that works by\n    comparing elements separated by a gap and reducing the gap over time.\n    Parameters:\n    arr (list): The list to be sorted.\n    Time Complexity:\n        - Best Case: O(n log n)  [When the list is nearly sorted]\n        - Average Case: O(n^(3/2)) or O(n^(5/4)) (depends on gap sequence)",
+        "detail": "DSA.algo.shell_sort",
+        "documentation": {}
+    },
+    {
         "label": "monthly_expenses",
         "kind": 5,
         "importPath": "DSA.array",
