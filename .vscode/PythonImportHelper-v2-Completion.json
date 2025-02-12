@@ -211,6 +211,15 @@
         "documentation": {}
     },
     {
+        "label": "selection_sort",
+        "kind": 2,
+        "importPath": "DSA.algo.selection_sort",
+        "description": "DSA.algo.selection_sort",
+        "peekOfCode": "def selection_sort(arr):\n    \"\"\"\n    Sorts an array in ascending order using the Selection Sort algorithm.\n    Time Complexity:\n    - Best Case: O(n^2) (Even if the array is already sorted, it still compares all elements)\n    - Average Case: O(n^2) (Two nested loops always iterate over the array)\n    - Worst Case: O(n^2) (Fully reversed order requires maximum swaps)\n    Space Complexity: O(1) (In-place sorting with no extra storage)\n    Parameters:\n    arr (list): The list to be sorted.",
+        "detail": "DSA.algo.selection_sort",
+        "documentation": {}
+    },
+    {
         "label": "shell_sort",
         "kind": 2,
         "importPath": "DSA.algo.shell_sort",
