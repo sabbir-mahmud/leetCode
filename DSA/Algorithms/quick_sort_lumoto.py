@@ -1,3 +1,18 @@
+"""
+Quick Sort with the **Lomuto partition scheme** works as follows:
+
+    1. **Choose a pivot** (usually the last element).
+    2. **Initialize a pointer `i`** just before the start of the array (or at -1).
+    3. **Iterate through the array** with a pointer `j` from the start to the second-last element:
+    - If `arr[j]` is less than or equal to the pivot, increment `i` and swap `arr[i]` and `arr[j]`.
+    4. **Swap the pivot** (last element) with `arr[i + 1]` to place it in its correct position.
+    5. **Recursively apply Quick Sort** to the left and right segments around the pivot.
+
+The array is sorted when the recursion finishes.
+
+"""
+
+
 def swap(a, b, arr):
     """
     Swaps the elements at indices `a` and `b` in the array `arr`.

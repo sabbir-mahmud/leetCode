@@ -1,3 +1,19 @@
+"""
+
+Quick Sort with the Hoare partition scheme works as follows:
+
+    1. **Choose a pivot** (often the first element).
+    2. **Initialize two pointers**: one (`i`) at the start and the other (`j`) at the end of the array.
+    3. **Move `i` right** until it finds an element greater than or equal to the pivot, and **move `j` left** until it finds an element less than or equal to the pivot.
+    4. **Swap the elements** at `i` and `j` if `i` is still less than `j`.
+    5. **Repeat** the process until the pointers cross. This partitions the array into two parts: elements smaller than the pivot on the left and greater elements on the right.
+    6. **Recursively apply the same process** to both parts.
+
+The array is sorted when the recursive process finishes.
+
+"""
+
+
 def swap(a, b, arr):
     """
     Swaps the elements at indices `a` and `b` in the array `arr`.
