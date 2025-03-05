@@ -643,11 +643,20 @@
         "documentation": {}
     },
     {
-        "label": "run",
+        "label": "two_pointer",
         "kind": 2,
         "importPath": "python.two_sum",
         "description": "python.two_sum",
-        "peekOfCode": "def run(nums, target):\n    nums_index = {}\n    for index, i in enumerate(nums):\n        complement = target - i\n        if complement in nums_index:\n            return [nums_index[complement], index]\n        nums_index[i] = index\nif __name__ == \"__main__\":\n    nums = [2, 7, 11, 15]\n    target = 9",
+        "peekOfCode": "def two_pointer(nums, target):\n    \"\"\"\n    Brute-force approach using nested loops.\n    Finds two numbers in nums that sum up to the target.\n    Time Complexity: O(n^2) - Due to the nested loops iterating over all pairs.\n    Space Complexity: O(1) - No extra space used apart from input storage.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
+        "detail": "python.two_sum",
+        "documentation": {}
+    },
+    {
+        "label": "using_hash_table",
+        "kind": 2,
+        "importPath": "python.two_sum",
+        "description": "python.two_sum",
+        "peekOfCode": "def using_hash_table(nums, target):\n    \"\"\"\n    Optimized approach using a hash table (dictionary).\n    Finds two numbers in nums that sum up to the target in linear time.\n    Time Complexity: O(n) - We traverse the list once.\n    Space Complexity: O(n) - We store elements in a dictionary.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
         "detail": "python.two_sum",
         "documentation": {}
     }
