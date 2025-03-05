@@ -607,6 +607,15 @@
         "documentation": {}
     },
     {
+        "label": "length_of_longest_substring",
+        "kind": 2,
+        "importPath": "python.longest_Substring_Without_Repeating_Characters",
+        "description": "python.longest_Substring_Without_Repeating_Characters",
+        "peekOfCode": "def length_of_longest_substring(s: str) -> int:\n    \"\"\"\n    Finds the length of the longest substring without repeating characters.\n    Uses the sliding window technique with a set to efficiently track characters.\n    Time Complexity: O(n) - Each character is processed at most twice (once added and once removed).\n    Space Complexity: O(min(n, 26)) - Stores unique characters, at most 26 if only lowercase English letters are used.\n    :param s: Input string\n    :return: Length of the longest substring without repeating characters\n    \"\"\"\n    char_set = set()  # Set to store unique characters in the current window",
+        "detail": "python.longest_Substring_Without_Repeating_Characters",
+        "documentation": {}
+    },
+    {
         "label": "longest_prefix",
         "kind": 2,
         "importPath": "python.longest_common_prefix",
