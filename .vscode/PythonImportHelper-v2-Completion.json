@@ -652,6 +652,24 @@
         "documentation": {}
     },
     {
+        "label": "rotate_array_brute_force",
+        "kind": 2,
+        "importPath": "python.rotate_array",
+        "description": "python.rotate_array",
+        "peekOfCode": "def rotate_array_brute_force(nums: list, k: int):\n    \"\"\"\n    Brute-force approach: Rotate the array one step at a time.\n    Time Complexity: O(k * n) - Very slow for large n and k.\n    Space Complexity: O(1) - Modifies the array in place.\n    \"\"\"\n    k = k % len(nums)  # Handle cases where k > len(nums)\n    for _ in range(k):\n        last_element = nums.pop()  # Remove last element\n        nums.insert(0, last_element)  # Insert it at the beginning (O(n) operation)",
+        "detail": "python.rotate_array",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_array",
+        "kind": 2,
+        "importPath": "python.rotate_array",
+        "description": "python.rotate_array",
+        "peekOfCode": "def rotate_array(nums: list, k: int):\n    \"\"\"\n    Optimized approach: Rotate the array using slicing.\n    Time Complexity: O(n) - Only two slicing operations.\n    Space Complexity: O(n) - Creates a new list before modifying nums.\n    \"\"\"\n    k = k % len(nums)  # Handle cases where k > len(nums)\n    nums[:] = nums[-k:] + nums[:-k]  # Move last k elements to the front\nif __name__ == \"__main__\":\n    # Brute-force method",
+        "detail": "python.rotate_array",
+        "documentation": {}
+    },
+    {
         "label": "two_pointer",
         "kind": 2,
         "importPath": "python.two_sum",
