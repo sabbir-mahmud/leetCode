@@ -643,6 +643,15 @@
         "documentation": {}
     },
     {
+        "label": "reverse_integer",
+        "kind": 2,
+        "importPath": "python.reverse_integer",
+        "description": "python.reverse_integer",
+        "peekOfCode": "def reverse_integer(x: int):\n    \"\"\"\n    Time Complexity:\n    - O(log(x)), where `x` is the absolute value of the input integer.\n    - Each iteration processes one digit, and the number of digits in `x` is logarithmic in base 10, so the time complexity is proportional to the number of digits.\n    Space Complexity:\n    - O(1) (constant space).\n    - We only use a few variables (`reversed_x`, `sign`, `m`) to store intermediate values, which does not depend on the size of the input number.\n    \"\"\"\n    # Constants for the minimum and maximum 32-bit integer values",
+        "detail": "python.reverse_integer",
+        "documentation": {}
+    },
+    {
         "label": "roman_to_integer",
         "kind": 2,
         "importPath": "python.roman_to_integer",
