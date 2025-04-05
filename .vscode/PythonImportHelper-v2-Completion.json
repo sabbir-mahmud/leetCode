@@ -580,12 +580,111 @@
         "documentation": {}
     },
     {
+        "label": "printSquare",
+        "kind": 2,
+        "importPath": "patterns.01_rectangular_star_pattern",
+        "description": "patterns.01_rectangular_star_pattern",
+        "peekOfCode": "def printSquare(n: int):\n    for i in range(n):\n        for j in range(n):\n            print(\"*\", end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Square Star Pattern of size 5:\")\n    printSquare(5)",
+        "detail": "patterns.01_rectangular_star_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "nForest",
+        "kind": 2,
+        "importPath": "patterns.02_right-Angled_Triangle_pattern",
+        "description": "patterns.02_right-Angled_Triangle_pattern",
+        "peekOfCode": "def nForest(n: int):\n    for i in range(n):\n        for j in range(i + 1):\n            print(\"*\", end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Right Angled Triangle Star Pattern of size 5:\")\n    nForest(5)",
+        "detail": "patterns.02_right-Angled_Triangle_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "nTriangle",
+        "kind": 2,
+        "importPath": "patterns.03_right-Angled_number_pyramid",
+        "description": "patterns.03_right-Angled_number_pyramid",
+        "peekOfCode": "def nTriangle(n):\n    for i in range(1, n + 1):\n        for j in range(1, i + 1):\n            print(j, end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Right Angled Number Pyramid Pattern of size 5:\")\n    nTriangle(5)",
+        "detail": "patterns.03_right-Angled_number_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "nTriangle",
+        "kind": 2,
+        "importPath": "patterns.04_right-Angled_number_pyramid",
+        "description": "patterns.04_right-Angled_number_pyramid",
+        "peekOfCode": "def nTriangle(n):\n    for i in range(n):\n        for j in range(i + 1):\n            print(i + 1, end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Right Angled Number Pyramid Pattern of size 5:\")\n    nTriangle(5)",
+        "detail": "patterns.04_right-Angled_number_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "seeding",
+        "kind": 2,
+        "importPath": "patterns.05_inverted_right_pyramid",
+        "description": "patterns.05_inverted_right_pyramid",
+        "peekOfCode": "def seeding(n):\n    for i in range(n, 0, -1):\n        for j in range(i):\n            print(i, end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Inverted Right Angled Number Pyramid Pattern of size 5:\")\n    seeding(5)",
+        "detail": "patterns.05_inverted_right_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "seeding",
+        "kind": 2,
+        "importPath": "patterns.06_inverted_right_pyramid",
+        "description": "patterns.06_inverted_right_pyramid",
+        "peekOfCode": "def seeding(n):\n    for i in range(n, 0, -1):\n        for j in range(i):\n            print(\"*\", end=\" \")\n        print()\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Inverted Right Angled Number Pyramid Pattern of size 5:\")\n    seeding(5)",
+        "detail": "patterns.06_inverted_right_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "nStarTriangle",
+        "kind": 2,
+        "importPath": "patterns.07_star_pyramid",
+        "description": "patterns.07_star_pyramid",
+        "peekOfCode": "def nStarTriangle(n):\n    # Loop through each row\n    for i in range(n):\n        # Print leading spaces\n        for j in range(n - i - 1):\n            print(\" \", end=\" \")\n        # Print stars\n        for j in range(2 * i + 1):\n            print(\"*\", end=\" \")\n        # Move to the next line after each row",
+        "detail": "patterns.07_star_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "nStarTriangle",
+        "kind": 2,
+        "importPath": "patterns.08_inverted_star_pyramid",
+        "description": "patterns.08_inverted_star_pyramid",
+        "peekOfCode": "def nStarTriangle(n: int) -> None:\n    \"\"\"\n    Print a star triangle of height n.\n    \"\"\"\n    for i in range(n, 0, -1):\n        # Print leading spaces\n        for j in range(n - i):\n            print(\" \", end=\" \")\n        # Print stars\n        for j in range(2 * i - 1):",
+        "detail": "patterns.08_inverted_star_pyramid",
+        "documentation": {}
+    },
+    {
+        "label": "nStarDiamond",
+        "kind": 2,
+        "importPath": "patterns.09_diamond_star_pattern",
+        "description": "patterns.09_diamond_star_pattern",
+        "peekOfCode": "def nStarDiamond(n: int) -> None:\n    \"\"\"Prints a diamond star pattern of size n.\"\"\"\n    # Upper half\n    for i in range(n):\n        print(\" \" * (n - i - 1) + \"*\" * (2 * i + 1))\n    # Lower half\n    for i in range(n - 2, -1, -1):\n        print(\" \" * (n - i - 1) + \"*\" * (2 * i + 1))\n    print()\nif __name__ == \"__main__\":",
+        "detail": "patterns.09_diamond_star_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "half_diamond_star_pattern",
+        "kind": 2,
+        "importPath": "patterns.10_half_diamond_star_pattern",
+        "description": "patterns.10_half_diamond_star_pattern",
+        "peekOfCode": "def half_diamond_star_pattern(n):\n    # Print the upper half of the diamond\n    for i in range(n + 1):\n        print(\"*\" * i)\n    # Print the lower half of the diamond\n    for i in range(n - 1):\n        print(\"*\" * (n - i - 1))\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Half Diamond Star Pattern of size 5:\")",
+        "detail": "patterns.10_half_diamond_star_pattern",
+        "documentation": {}
+    },
+    {
         "label": "gcdOfStrings",
         "kind": 2,
         "importPath": "python.GCD_string",
         "description": "python.GCD_string",
-        "peekOfCode": "def gcdOfStrings(self, str1: str, str2: str) -> str:\n    from math import gcd\n    if str1 + str2 == str2 + str1:\n        return str1[: gcd(len(str1), len(str2))]\n    return \"\"",
+        "peekOfCode": "def gcdOfStrings(str1: str, str2: str):\n    # Get the lengths of str1 and str2 and store them in l1 and l2 for later use.\n    # Example: str1 = \"ABCABC\" -> l1 = 6, str2 = \"ABC\" -> l2 = 3\n    l1, l2 = len(str1), len(str2)\n    # Loop over possible lengths (i) from the smaller string's length down to 1.\n    # We start with the max possible length to find the *greatest* common divisor first.\n    # min(l1, l2) ensures we don’t exceed the shorter string’s length.\n    for i in range(min(l1, l2), 0, -1):\n        # Check if i divides both l1 and l2 evenly (no remainder).\n        # This is like finding a common factor in numbers; the substring length must work for both.",
         "detail": "python.GCD_string",
+        "documentation": {}
+    },
+    {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "python.Kids_With_the_Greatest_Number_of_Candies",
+        "description": "python.Kids_With_the_Greatest_Number_of_Candies",
+        "peekOfCode": "def solution(candies: list[int], extraCandies: int) -> list[bool]:\n    max_candy = max(candies)\n    return [(candy + extraCandies >= max_candy) for candy in candies]\nif __name__ == \"__main__\":\n    candies = [2, 3, 5, 1, 3]\n    extraCandies = 3\n    print(solution(candies, extraCandies))",
+        "detail": "python.Kids_With_the_Greatest_Number_of_Candies",
         "documentation": {}
     },
     {
