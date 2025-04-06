@@ -670,6 +670,60 @@
         "documentation": {}
     },
     {
+        "label": "nBinaryTriangle",
+        "kind": 2,
+        "importPath": "patterns.11_Binary Number Triangle_pattern",
+        "description": "patterns.11_Binary Number Triangle_pattern",
+        "peekOfCode": "def nBinaryTriangle(n):\n    for i in range(n):\n        start = 1 if i % 2 == 0 else 0\n        row = []\n        for j in range(i + 1):\n            row.append(str(start))\n            start = 1 - start\n        print(\" \".join(row))\nif __name__ == \"__main__\":\n    nBinaryTriangle(5)",
+        "detail": "patterns.11_Binary Number Triangle_pattern",
+        "documentation": {}
+    },
+    {
+        "label": "number_crown",
+        "kind": 2,
+        "importPath": "patterns.12_Number Crown Pattern",
+        "description": "patterns.12_Number Crown Pattern",
+        "peekOfCode": "def number_crown(n):\n    for i in range(1, n + 1):\n        # Left side numbers\n        left = [str(j) for j in range(1, i + 1)]\n        # Right side numbers\n        right = [str(j) for j in range(i, 0, -1)]\n        # Spaces between the crowns\n        space = \"  \" * (n - i) * 2\n        # Build the full row and print once\n        print(\" \".join(left) + space + \" \".join(right))",
+        "detail": "patterns.12_Number Crown Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "nNumberTriangle",
+        "kind": 2,
+        "importPath": "patterns.13_Increasing Number Triangle Pattern",
+        "description": "patterns.13_Increasing Number Triangle Pattern",
+        "peekOfCode": "def nNumberTriangle(n):\n    num = 1\n    for i in range(1, n + 1):\n        for j in range(i, i * 2):\n            print(num, end=\" \")\n            num += 1\n        print()\nif __name__ == \"__main__\":\n    nNumberTriangle(5)",
+        "detail": "patterns.13_Increasing Number Triangle Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "increasing_letter_triangle",
+        "kind": 2,
+        "importPath": "patterns.14_Increasing Letter Triangle Pattern",
+        "description": "patterns.14_Increasing Letter Triangle Pattern",
+        "peekOfCode": "def increasing_letter_triangle(n):\n    ch = ord(\"A\")\n    for i in range(1, n + 1):\n        for j in range(1, i + 1):\n            print(chr(ch), end=\" \")\n            ch += 1\n        ch = ord(\"A\")\n        print()\nif __name__ == \"__main__\":\n    increasing_letter_triangle(5)",
+        "detail": "patterns.14_Increasing Letter Triangle Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_latter_triangle",
+        "kind": 2,
+        "importPath": "patterns.15_Reverse Letter Triangle Pattern",
+        "description": "patterns.15_Reverse Letter Triangle Pattern",
+        "peekOfCode": "def reverse_latter_triangle(n):\n    ch = ord(\"A\")\n    for i in range(n + 1, 0, -1):\n        for j in range(1, i):\n            print(chr(ch), end=\" \")\n            ch += 1\n        ch = ord(\"A\")\n        print()\nif __name__ == \"__main__\":\n    reverse_latter_triangle(5)",
+        "detail": "patterns.15_Reverse Letter Triangle Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "alpha_ramp_pattern",
+        "kind": 2,
+        "importPath": "patterns.16_Alpha-Ramp Pattern",
+        "description": "patterns.16_Alpha-Ramp Pattern",
+        "peekOfCode": "def alpha_ramp_pattern(n):\n    ch = ord(\"A\")\n    for i in range(1, n + 1):\n        for j in range(1, i + 1):\n            print(chr(ch), end=\" \")\n        ch += 1\n        print()\nif __name__ == \"__main__\":\n    alpha_ramp_pattern(5)",
+        "detail": "patterns.16_Alpha-Ramp Pattern",
+        "documentation": {}
+    },
+    {
         "label": "gcdOfStrings",
         "kind": 2,
         "importPath": "python.GCD_string",
@@ -685,6 +739,15 @@
         "description": "python.Kids_With_the_Greatest_Number_of_Candies",
         "peekOfCode": "def solution(candies: list[int], extraCandies: int) -> list[bool]:\n    max_candy = max(candies)\n    return [(candy + extraCandies >= max_candy) for candy in candies]\nif __name__ == \"__main__\":\n    candies = [2, 3, 5, 1, 3]\n    extraCandies = 3\n    print(solution(candies, extraCandies))",
         "detail": "python.Kids_With_the_Greatest_Number_of_Candies",
+        "documentation": {}
+    },
+    {
+        "label": "valid_parentheses",
+        "kind": 2,
+        "importPath": "python.Valid Parentheses",
+        "description": "python.Valid Parentheses",
+        "peekOfCode": "def valid_parentheses(string: str):\n    stack = []\n    bracket_map = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n    for char in string:\n        if char in bracket_map:\n            if stack and stack[-1] == bracket_map[char]:\n                stack.pop()\n            else:\n                return False\n        else:",
+        "detail": "python.Valid Parentheses",
         "documentation": {}
     },
     {
