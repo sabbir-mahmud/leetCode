@@ -724,6 +724,60 @@
         "documentation": {}
     },
     {
+        "label": "alpha_hill",
+        "kind": 2,
+        "importPath": "patterns.17_Alpha-Hill Pattern",
+        "description": "patterns.17_Alpha-Hill Pattern",
+        "peekOfCode": "def alpha_hill(n):\n    ch = ord(\"A\")\n    for i in range(n):\n        print(\"  \" * (n - i), end=\"\")\n        for j in range(i + 1):\n            print(chr(ch), end=\" \")\n            ch += 1\n        ch -= 1\n        for j in range(i, 0, -1):\n            ch -= 1",
+        "detail": "patterns.17_Alpha-Hill Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "alpha_triangle",
+        "kind": 2,
+        "importPath": "patterns.18_Alpha-Triangle Pattern",
+        "description": "patterns.18_Alpha-Triangle Pattern",
+        "peekOfCode": "def alpha_triangle(n):\n    ch = ord(\"A\") + n - 1\n    for i in range(1, n + 1):\n        for j in range(1, i + 1):\n            print(chr(ch), end=\" \")\n            ch -= 1\n        ch = ord(\"A\") + n - 1\n        print()\nif __name__ == \"__main__\":\n    alpha_triangle(5)",
+        "detail": "patterns.18_Alpha-Triangle Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "symmetric_void_pattern",
+        "kind": 2,
+        "importPath": "patterns.19_Symmetric-Void Pattern",
+        "description": "patterns.19_Symmetric-Void Pattern",
+        "peekOfCode": "def symmetric_void_pattern(n):\n    for i in range(n, 0, -1):\n        star = \"*\" * i\n        space = \"  \" * (n - i) if n - i != 0 else \"\"\n        print(f\"{star}{space}{star}\")\n    for i in range(1, n + 1):\n        star = \"*\" * i\n        space = \"  \" * (n - i) if n - i != 0 else \"\"\n        print(f\"{star}{space}{star}\")\nif __name__ == \"__main__\":",
+        "detail": "patterns.19_Symmetric-Void Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "symmetric_butterfly_pattern",
+        "kind": 2,
+        "importPath": "patterns.20_Symmetric-Butterfly Pattern",
+        "description": "patterns.20_Symmetric-Butterfly Pattern",
+        "peekOfCode": "def symmetric_butterfly_pattern(n):\n    for i in range(1, n + 1):\n        star = \"*\" * i\n        space = \"  \" * (n - i) if n - i != 0 else \"\"\n        print(f\"{star}{space}{star}\")\n    for i in range(n - 1, 0, -1):\n        star = \"*\" * i\n        space = \"  \" * (n - i) if n - i != 0 else \"\"\n        print(f\"{star}{space}{star}\")\nif __name__ == \"__main__\":",
+        "detail": "patterns.20_Symmetric-Butterfly Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "hollow_rectangle_pattern",
+        "kind": 2,
+        "importPath": "patterns.21_Hollow Rectangle Pattern",
+        "description": "patterns.21_Hollow Rectangle Pattern",
+        "peekOfCode": "def hollow_rectangle_pattern(n):\n    for i in range(n):\n        for j in range(n):\n            if i == 0 or i == n - 1 or j == 0 or j == n - 1:\n                print(\"*\", end=\"\")\n            else:\n                print(\" \", end=\"\")\n        print()\nif __name__ == \"__main__\":\n    hollow_rectangle_pattern(5)",
+        "detail": "patterns.21_Hollow Rectangle Pattern",
+        "documentation": {}
+    },
+    {
+        "label": "number_patter",
+        "kind": 2,
+        "importPath": "patterns.22_The Number Pattern",
+        "description": "patterns.22_The Number Pattern",
+        "peekOfCode": "def number_patter(n):\n    size = 2 * n - 1\n    for i in range(size):\n        for j in range(size):\n            val = n - min(i, j, size - 1 - i, size - 1 - j)\n            print(val, end=\" \")\n        print()\nif __name__ == \"__main__\":\n    number_patter(5)",
+        "detail": "patterns.22_The Number Pattern",
+        "documentation": {}
+    },
+    {
         "label": "gcdOfStrings",
         "kind": 2,
         "importPath": "python.GCD_string",
