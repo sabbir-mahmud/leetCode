@@ -796,6 +796,15 @@
         "documentation": {}
     },
     {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "python.Merge Two Sorted Lists",
+        "description": "python.Merge Two Sorted Lists",
+        "peekOfCode": "class Solution:\n    def mergeTwoLists(\n        self, list1: Optional[ListNode], list2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        k = ListNode()\n        i = k\n        while list1 and list2:\n            if list1.val < list2.val:\n                i.next = list1\n                list1 = list1.next",
+        "detail": "python.Merge Two Sorted Lists",
+        "documentation": {}
+    },
+    {
         "label": "valid_parentheses",
         "kind": 2,
         "importPath": "python.Valid Parentheses",
