@@ -796,6 +796,15 @@
         "documentation": {}
     },
     {
+        "label": "find_max_average",
+        "kind": 2,
+        "importPath": "python.Maximum Average Subarray I",
+        "description": "python.Maximum Average Subarray I",
+        "peekOfCode": "def find_max_average(nums, k):\n    # Step 1: Calculate the sum of the first window of size k\n    window_sum = sum(nums[:k])  # Initial window: nums[0] to nums[k-1]\n    max_sum = window_sum  # Store the maximum sum found so far\n    # Step 2: Slide the window through the array from index k to the end\n    for i in range(k, len(nums)):\n        # Remove the element that is going out of the window (nums[i - k])\n        # Add the new element that is coming into the window (nums[i])\n        window_sum += nums[i] - nums[i - k]\n        # Update max_sum if the new window_sum is greater",
+        "detail": "python.Maximum Average Subarray I",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "python.Merge Two Sorted Lists",
