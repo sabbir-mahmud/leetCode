@@ -1,582 +1,10 @@
 [
     {
-        "label": "threading",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "threading",
-        "description": "threading",
-        "detail": "threading",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "deque",
-        "importPath": "collections",
-        "description": "collections",
-        "isExtraImport": true,
-        "detail": "collections",
-        "documentation": {}
-    },
-    {
-        "label": "deque",
-        "importPath": "collections",
-        "description": "collections",
-        "isExtraImport": true,
-        "detail": "collections",
-        "documentation": {}
-    },
-    {
-        "label": "Generic",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TypeVar",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "binary_search_using_loop",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.binary_search",
-        "description": "DSA.Algorithms.binary_search",
-        "peekOfCode": "def binary_search_using_loop(arr: list, find_num):\n    \"\"\"\n    Perform binary search iteratively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Sort the array to ensure binary search can be applied.\n    2. Initialize two pointers, `left_index` and `right_index`, representing the search boundaries.\n    3. Calculate the middle index and compare the middle element with the target (`find_num`).\n    4. Narrow down the search range based on the comparison result.\n    5. Repeat until the element is found or the range becomes invalid.\n    :param arr: List of integers to search within",
-        "detail": "DSA.Algorithms.binary_search",
-        "documentation": {}
-    },
-    {
-        "label": "binary_search_using_recursion",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.binary_search",
-        "description": "DSA.Algorithms.binary_search",
-        "peekOfCode": "def binary_search_using_recursion(arr: list, find_num, left_index, right_index):\n    \"\"\"\n    Perform binary search recursively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Base Case: If the search range is invalid (`right_index < left_index`), return -1.\n    2. Calculate the middle index of the current search range.\n    3. Compare the middle element with the target (`find_num`).\n    4. If the middle element matches the target, return its index.\n    5. Otherwise, recursively adjust the search range based on the comparison.\n    :param arr: List of integers to search within",
-        "detail": "DSA.Algorithms.binary_search",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
-        "importPath": "DSA.Algorithms.binary_search",
-        "description": "DSA.Algorithms.binary_search",
-        "peekOfCode": "arr = [34, 55, 623, 344, 124, 1324, 533, 6565, 122, 345, 665, 12]\ndef binary_search_using_loop(arr: list, find_num):\n    \"\"\"\n    Perform binary search iteratively to find the index of `find_num` in a sorted array.\n    Steps:\n    1. Sort the array to ensure binary search can be applied.\n    2. Initialize two pointers, `left_index` and `right_index`, representing the search boundaries.\n    3. Calculate the middle index and compare the middle element with the target (`find_num`).\n    4. Narrow down the search range based on the comparison result.\n    5. Repeat until the element is found or the range becomes invalid.",
-        "detail": "DSA.Algorithms.binary_search",
-        "documentation": {}
-    },
-    {
-        "label": "idx",
-        "kind": 5,
-        "importPath": "DSA.Algorithms.binary_search",
-        "description": "DSA.Algorithms.binary_search",
-        "peekOfCode": "idx = binary_search_using_recursion(arr, 6565, 0, len(arr) - 1)\nprint(f\"Element found at index: {idx}\")  # Output the result, -1 if not found",
-        "detail": "DSA.Algorithms.binary_search",
-        "documentation": {}
-    },
-    {
-        "label": "bubble_sort_using_loop",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.bubble_sort",
-        "description": "DSA.Algorithms.bubble_sort",
-        "peekOfCode": "def bubble_sort_using_loop(arr: list):\n    \"\"\"\n    Sorts an array in ascending order using the Bubble Sort algorithm.\n    Parameters:\n        arr (list): The list of integers to sort.\n    Steps:\n    1. Compare adjacent elements in the array.\n    2. Swap them if the left element is greater than the right element.\n    3. Continue this process for all elements in decreasing order of pass length.\n    4. Break early if no swaps are made during a pass (array is already sorted).",
-        "detail": "DSA.Algorithms.bubble_sort",
-        "documentation": {}
-    },
-    {
-        "label": "arr",
-        "kind": 5,
-        "importPath": "DSA.Algorithms.bubble_sort",
-        "description": "DSA.Algorithms.bubble_sort",
-        "peekOfCode": "arr = [34, 55, 623, 344, 124, 1324, 533, 6565, 122, 345, 665, 12]\n# Function to implement Bubble Sort using nested loops\ndef bubble_sort_using_loop(arr: list):\n    \"\"\"\n    Sorts an array in ascending order using the Bubble Sort algorithm.\n    Parameters:\n        arr (list): The list of integers to sort.\n    Steps:\n    1. Compare adjacent elements in the array.\n    2. Swap them if the left element is greater than the right element.",
-        "detail": "DSA.Algorithms.bubble_sort",
-        "documentation": {}
-    },
-    {
-        "label": "insertion_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.insertion_sort",
-        "description": "DSA.Algorithms.insertion_sort",
-        "peekOfCode": "def insertion_sort(elements):\n    \"\"\"\n    Sorts a list using the insertion sort algorithm.\n    Time Complexity:\n    - Best case (already sorted): O(n)\n    - Worst/Average case: O(n^2)\n    Space Complexity: O(1) (in-place sorting)\n    \"\"\"\n    for i in range(1, len(elements)):\n        anchor = elements[i]  # Element to be placed at the correct position",
-        "detail": "DSA.Algorithms.insertion_sort",
-        "documentation": {}
-    },
-    {
-        "label": "merge_two_sorted_lists",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.merge_sort",
-        "description": "DSA.Algorithms.merge_sort",
-        "peekOfCode": "def merge_two_sorted_lists(a, b, arr):\n    \"\"\"\n    Merges two sorted lists 'a' and 'b' into 'arr' in sorted order.\n    Parameters:\n    a (list): First sorted sublist.\n    b (list): Second sorted sublist.\n    arr (list): The main list where the merged elements will be stored.\n    \"\"\"\n    len_a, len_b = len(a), len(b)\n    i = j = k = 0  # Pointers for 'a', 'b', and 'arr'",
-        "detail": "DSA.Algorithms.merge_sort",
-        "documentation": {}
-    },
-    {
-        "label": "merge_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.merge_sort",
-        "description": "DSA.Algorithms.merge_sort",
-        "peekOfCode": "def merge_sort(arr):\n    \"\"\"\n    Sorts the given list 'arr' using the merge sort algorithm.\n    Parameters:\n    arr (list): The list to be sorted.\n    \"\"\"\n    if len(arr) <= 1:\n        return  # Base case: A list of 0 or 1 elements is already sorted\n    mid = len(arr) // 2  # Find the middle index\n    left = arr[:mid]  # Left half",
-        "detail": "DSA.Algorithms.merge_sort",
-        "documentation": {}
-    },
-    {
-        "label": "merge_two_sorted_lists_exercise",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.merge_sort",
-        "description": "DSA.Algorithms.merge_sort",
-        "peekOfCode": "def merge_two_sorted_lists_exercise(left, right, key=\"name\", descending=False):\n    \"\"\"\n    Merges two sorted lists of dictionaries based on a given key.\n    Parameters:\n    left (list): Left sorted list.\n    right (list): Right sorted list.\n    key (str): The dictionary key used for sorting.\n    descending (bool): Sort order (True for descending, False for ascending).\n    Returns:\n    list: Merged sorted list.",
-        "detail": "DSA.Algorithms.merge_sort",
-        "documentation": {}
-    },
-    {
-        "label": "merge_sort_exercise",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.merge_sort",
-        "description": "DSA.Algorithms.merge_sort",
-        "peekOfCode": "def merge_sort_exercise(elements, key=\"name\", descending=False):\n    \"\"\"\n    Sorts a list of dictionaries based on a given key using merge sort.\n    Parameters:\n    elements (list): List of dictionaries to be sorted.\n    key (str): Dictionary key to sort by.\n    descending (bool): Sort order (True for descending, False for ascending).\n    Returns:\n    list: Sorted list of dictionaries.\n    \"\"\"",
-        "detail": "DSA.Algorithms.merge_sort",
-        "documentation": {}
-    },
-    {
-        "label": "swap",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_hoare",
-        "description": "DSA.Algorithms.quick_sort_hoare",
-        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    \"\"\"\n    if a != b:\n        arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,",
-        "detail": "DSA.Algorithms.quick_sort_hoare",
-        "documentation": {}
-    },
-    {
-        "label": "partition",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_hoare",
-        "description": "DSA.Algorithms.quick_sort_hoare",
-        "peekOfCode": "def partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the first element as the pivot.\n    Elements smaller than or equal to the pivot are moved to its left,\n    and elements greater than the pivot are moved to its right.\n    Returns the final index of the pivot after partitioning.\n    \"\"\"\n    pivot_index = start  # Choosing the first element as the pivot\n    pivot = elements[pivot_index]\n    while start < end:",
-        "detail": "DSA.Algorithms.quick_sort_hoare",
-        "documentation": {}
-    },
-    {
-        "label": "quick_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_hoare",
-        "description": "DSA.Algorithms.quick_sort_hoare",
-        "peekOfCode": "def quick_sort(elements, start, end):\n    \"\"\"\n    Recursively applies quicksort on subarrays divided by the pivot.\n    \"\"\"\n    if start < end:\n        pi = partition(elements, start, end)  # Partition the array\n        quick_sort(elements, start, pi - 1)  # Recursively sort left partition\n        quick_sort(elements, pi + 1, end)  # Recursively sort right partition\nif __name__ == \"__main__\":\n    elements = [11, 9, 8, 29, 7, 2, 33, 15, 28]",
-        "detail": "DSA.Algorithms.quick_sort_hoare",
-        "documentation": {}
-    },
-    {
-        "label": "swap",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_lumoto",
-        "description": "DSA.Algorithms.quick_sort_lumoto",
-        "peekOfCode": "def swap(a, b, arr):\n    \"\"\"\n    Swaps the elements at indices `a` and `b` in the array `arr`.\n    This operation is only performed if the indices are different to avoid unnecessary writes.\n    \"\"\"\n    if a != b:\n        arr[a], arr[b] = arr[b], arr[a]\ndef partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the last element as the pivot.",
-        "detail": "DSA.Algorithms.quick_sort_lumoto",
-        "documentation": {}
-    },
-    {
-        "label": "partition",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_lumoto",
-        "description": "DSA.Algorithms.quick_sort_lumoto",
-        "peekOfCode": "def partition(elements, start, end):\n    \"\"\"\n    Partitions the array using the last element as the pivot.\n    Elements smaller than or equal to the pivot are moved to the left,\n    and elements greater than the pivot are moved to the right.\n    Parameters:\n    - elements: List of elements to be sorted.\n    - start: Starting index of the partition.\n    - end: Ending index of the partition (pivot index).\n    Returns:",
-        "detail": "DSA.Algorithms.quick_sort_lumoto",
-        "documentation": {}
-    },
-    {
-        "label": "quick_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.quick_sort_lumoto",
-        "description": "DSA.Algorithms.quick_sort_lumoto",
-        "peekOfCode": "def quick_sort(elements, start, end):\n    \"\"\"\n    Implements the Quick Sort algorithm using recursion.\n    Parameters:\n    - elements: List of elements to be sorted.\n    - start: Starting index of the sub-array to sort.\n    - end: Ending index of the sub-array to sort.\n    Quick Sort operates by partitioning the array and recursively sorting the left and right subarrays.\n    \"\"\"\n    if start < end:",
-        "detail": "DSA.Algorithms.quick_sort_lumoto",
-        "documentation": {}
-    },
-    {
-        "label": "selection_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.selection_sort",
-        "description": "DSA.Algorithms.selection_sort",
-        "peekOfCode": "def selection_sort(arr):\n    \"\"\"\n    Sorts an array in ascending order using the Selection Sort algorithm.\n    Time Complexity:\n    - Best Case: O(n^2) (Even if the array is already sorted, it still compares all elements)\n    - Average Case: O(n^2) (Two nested loops always iterate over the array)\n    - Worst Case: O(n^2) (Fully reversed order requires maximum swaps)\n    Space Complexity: O(1) (In-place sorting with no extra storage)\n    Parameters:\n    arr (list): The list to be sorted.",
-        "detail": "DSA.Algorithms.selection_sort",
-        "documentation": {}
-    },
-    {
-        "label": "shell_sort",
-        "kind": 2,
-        "importPath": "DSA.Algorithms.shell_sort",
-        "description": "DSA.Algorithms.shell_sort",
-        "peekOfCode": "def shell_sort(arr):\n    \"\"\"\n    Sorts the given list 'arr' using the Shell Sort algorithm.\n    Shell Sort is an optimized version of insertion sort that works by\n    comparing elements separated by a gap and reducing the gap over time.\n    Parameters:\n    arr (list): The list to be sorted.\n    Time Complexity:\n        - Best Case: O(n log n)  [When the list is nearly sorted]\n        - Average Case: O(n^(3/2)) or O(n^(5/4)) (depends on gap sequence)",
-        "detail": "DSA.Algorithms.shell_sort",
-        "documentation": {}
-    },
-    {
-        "label": "monthly_expenses",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "monthly_expenses = [2200, 2350, 2600, 2130, 2190]\n# 1. Extra dollars spent in February compared to January\nextra_feb = monthly_expenses[1] - monthly_expenses[0]\nprint(f\"Extra spent in Feb compared to Jan: {extra_feb} dollars\")\n# 2. Total expenses in the first quarter (Jan-Mar)\nq1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "extra_feb",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "extra_feb = monthly_expenses[1] - monthly_expenses[0]\nprint(f\"Extra spent in Feb compared to Jan: {extra_feb} dollars\")\n# 2. Total expenses in the first quarter (Jan-Mar)\nq1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")\nelse:\n    print(\"No month with exactly $2000 spent\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "q1_expenses",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "q1_expenses = sum(monthly_expenses[:3])\nprint(f\"Total expenses in Q1: {q1_expenses} dollars\")\n# 3. Check if exactly $2000 was spent in any month\nif 2000 in monthly_expenses:\n    print(\"Found a month with exactly $2000 spent\")\nelse:\n    print(\"No month with exactly $2000 spent\")\n# 4. Add June expenses of $1980\nmonthly_expenses.append(1980)\nprint(f\"Expenses after adding June: {monthly_expenses}\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "heroes",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "heroes = [\"spider man\", \"thor\", \"hulk\", \"iron man\", \"captain america\"]\n# 1. Length of the heroes list\nprint(f\"Number of heroes: {len(heroes)}\")\n# 2. Add 'black panther' at the end of the list\nheroes.append(\"black panther\")\nprint(f\"Heroes after adding 'black panther': {heroes}\")\n# 3. Move 'black panther' to be after 'hulk'\nheroes.remove(\"black panther\")\nheroes.insert(3, \"black panther\")\nprint(f\"Heroes after rearranging: {heroes}\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "heroes[1:3]",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "heroes[1:3] = [\"doctor strange\"]\nprint(f\"Heroes after replacement: {heroes}\")\n# 5. Sort the heroes alphabetically\nheroes.sort()\nprint(f\"Heroes sorted alphabetically: {heroes}\")\n# Exercise 03: Odd Numbers List\n# Generate a list of odd numbers up to a user-defined maximum\nmax_num = int(input(\"Enter the max number: \"))\nodd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "max_num",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "max_num = int(input(\"Enter the max number: \"))\nodd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "odd_numbers",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.array",
-        "description": "DSA.Data Structures.array",
-        "peekOfCode": "odd_numbers = [i for i in range(1, max_num + 1) if i % 2 != 0]\nprint(f\"Odd numbers up to {max_num}: {odd_numbers}\")",
-        "detail": "DSA.Data Structures.array",
-        "documentation": {}
-    },
-    {
-        "label": "constant_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def constant_time_example(arr):\n    \"\"\"\n    O(1) - Constant Time\n    Accessing an element in an array by index.\n    How to calculate:\n    - Only one operation is performed irrespective of input size.\n    Time Complexity: O(1)\n    Space Complexity: O(1)\n    \"\"\"\n    return arr[0]  # Always takes the same amount of time",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "logarithmic_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def logarithmic_time_example(arr, target):\n    \"\"\"\n    O(log n) - Logarithmic Time\n    Binary search implementation.\n    How to calculate:\n    - The array is repeatedly divided into halves until the target is found or the array is empty.\n    - Logarithmic operations occur due to halving (base 2 logarithm).\n    Time Complexity: O(log n)\n    Space Complexity: O(1)\n    \"\"\"",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "linear_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def linear_time_example(arr):\n    \"\"\"\n    O(n) - Linear Time\n    Iterating through an array.\n    How to calculate:\n    - A single loop iterates through all elements once.\n    - The number of iterations is proportional to the size of the input (n).\n    Time Complexity: O(n)\n    Space Complexity: O(1)\n    \"\"\"",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "linearithmic_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def linearithmic_time_example(arr):\n    \"\"\"\n    O(n log n) - Linearithmic Time\n    Using Python's built-in sorted function (Timsort).\n    How to calculate:\n    - Sorting involves multiple passes through the input (n) combined with merging (log n).\n    Time Complexity: O(n log n)\n    Space Complexity: O(n)\n    \"\"\"\n    return sorted(arr)",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "quadratic_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def quadratic_time_example(arr):\n    \"\"\"\n    O(n^2) - Quadratic Time\n    Nested loops iterating over the same input.\n    How to calculate:\n    - Outer loop runs n times.\n    - Inner loop runs n times for each iteration of the outer loop.\n    - Total operations: n * n = n^2.\n    Time Complexity: O(n^2)\n    Space Complexity: O(1)",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "exponential_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def exponential_time_example(n):\n    \"\"\"\n    O(2^n) - Exponential Time\n    Fibonacci sequence using recursion.\n    How to calculate:\n    - Each function call generates two more calls, doubling the work at each level.\n    - Total operations grow as powers of 2.\n    Time Complexity: O(2^n)\n    Space Complexity: O(n) (due to recursion stack)\n    \"\"\"",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "factorial_time_example",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "def factorial_time_example(arr):\n    \"\"\"\n    O(n!) - Factorial Time\n    Generating all permutations of an array.\n    How to calculate:\n    - For n elements, there are n! permutations.\n    - Recursive backtracking or library functions iterate through all possible arrangements.\n    Time Complexity: O(n!)\n    Space Complexity: O(n!) (to store permutations)\n    \"\"\"",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "DATA_STRUCTURES_PERFORMANCE",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.bigO",
-        "description": "DSA.Data Structures.bigO",
-        "peekOfCode": "DATA_STRUCTURES_PERFORMANCE = {\n    \"Array\": {\"Access\": \"O(1)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(n)\"},\n    \"Linked List\": {\"Access\": \"O(n)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(1)\"},\n    \"Hash Table\": {\"Access\": \"O(1)\", \"Search\": \"O(1)\", \"Insert/Delete\": \"O(1)\"},\n    \"Binary Search Tree\": {\n        \"Access\": \"O(log n)\",\n        \"Search\": \"O(log n)\",\n        \"Insert/Delete\": \"O(log n)\",\n    },\n    \"Heap\": {\"Access\": \"O(1)\", \"Search\": \"O(n)\", \"Insert/Delete\": \"O(log n)\"},",
-        "detail": "DSA.Data Structures.bigO",
-        "documentation": {}
-    },
-    {
-        "label": "BinarySearchTreeNode",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.binary_tree",
-        "description": "DSA.Data Structures.binary_tree",
-        "peekOfCode": "class BinarySearchTreeNode:\n    def __init__(self, data):\n        \"\"\"\n        Initialize a Binary Search Tree node.\n        :param data: Value to store in the node.\n        \"\"\"\n        self.data = data  # Value of the node\n        self.left = None  # Left child (stores smaller values)\n        self.right = None  # Right child (stores larger values)\n    def add_child(self, data):",
-        "detail": "DSA.Data Structures.binary_tree",
-        "documentation": {}
-    },
-    {
-        "label": "build_tree",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.binary_tree",
-        "description": "DSA.Data Structures.binary_tree",
-        "peekOfCode": "def build_tree(elements):\n    \"\"\"\n    Build a binary search tree from a list of elements.\n    :param elements: List of elements to insert into the BST.\n    :return: Root node of the constructed BST.\n    \"\"\"\n    root = BinarySearchTreeNode(elements[0])\n    for element in elements[1:]:\n        root.add_child(element)\n    return root",
-        "detail": "DSA.Data Structures.binary_tree",
-        "documentation": {}
-    },
-    {
-        "label": "Node",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.double_ll",
-        "description": "DSA.Data Structures.double_ll",
-        "peekOfCode": "class Node:\n    \"\"\"\n    Represents a single node in the doubly linked list.\n    Attributes:\n        data: The data stored in the node.\n        next: A reference to the next node in the linked list.\n        prev: A reference to the previous node in the linked list.\n    \"\"\"\n    def __init__(self, data, next=None, prev=None):\n        \"\"\"",
-        "detail": "DSA.Data Structures.double_ll",
-        "documentation": {}
-    },
-    {
-        "label": "DoublyLinkedList",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.double_ll",
-        "description": "DSA.Data Structures.double_ll",
-        "peekOfCode": "class DoublyLinkedList:\n    \"\"\"\n    Implements a doubly linked list with various utility methods for insertion, deletion, traversal, and more.\n    Attributes:\n        head: Points to the first node in the linked list.\n        tail: Points to the last node in the linked list, allowing efficient operations at the end of the list.\n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        Initialize an empty doubly linked list with head and tail set to None.",
-        "detail": "DSA.Data Structures.double_ll",
-        "documentation": {}
-    },
-    {
-        "label": "HashTable",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.hash_table",
-        "description": "DSA.Data Structures.hash_table",
-        "peekOfCode": "class HashTable:\n    def __init__(self, size=100) -> None:\n        \"\"\"\n        Initialize the hash table with a given size.\n        The table is represented as a list of empty lists to handle collisions using chaining.\n        :param size: The size of the hash table (default: 100).\n        \"\"\"\n        self.size = size\n        self.table = [[] for _ in range(self.size)]\n    def _get_hash(self, key):",
-        "detail": "DSA.Data Structures.hash_table",
-        "documentation": {}
-    },
-    {
-        "label": "hash_table",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "hash_table = {\"mar1\": 1, \"mar2\": 3, \"mar3\": 4, \"mar4\": 4}\n# Access and print a specific item\nprint(f\"Get item: {hash_table['mar1']}\")\n# Update a value in the hash table\nhash_table[\"mar1\"] = 3\nprint(f\"Updated item value for 'mar1': {hash_table['mar1']}\")\n# Print all keys\nprint(f\"Keys: {list(hash_table.keys())}\")\n# Print all values\nprint(f\"Values: {list(hash_table.values())}\")",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "hash_table[\"mar1\"]",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "hash_table[\"mar1\"] = 3\nprint(f\"Updated item value for 'mar1': {hash_table['mar1']}\")\n# Print all keys\nprint(f\"Keys: {list(hash_table.keys())}\")\n# Print all values\nprint(f\"Values: {list(hash_table.values())}\")\n# Iterate over and print all key-value pairs\nprint(\"All key-value pairs:\")\nfor key, value in hash_table.items():\n    print(f\"Key: {key} --> Value: {value}\")",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "weather",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "weather = {}\n# Path to the CSV file\nfile_path = \"/Users/sabbir/work/hand-notes/DSA/hashTable/nyc_weather.csv\"\n# Open the file in read mode\nwith open(file_path, mode=\"r\") as f:\n    # Skip the header row if the file contains column names\n    next(f)\n    # Iterate through each line in the file\n    for line in f:\n        try:",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "file_path",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "file_path = \"/Users/sabbir/work/hand-notes/DSA/hashTable/nyc_weather.csv\"\n# Open the file in read mode\nwith open(file_path, mode=\"r\") as f:\n    # Skip the header row if the file contains column names\n    next(f)\n    # Iterate through each line in the file\n    for line in f:\n        try:\n            # Remove leading/trailing spaces and split the line into key (date) and value (temperature)\n            key, value = line.strip().split(\",\")",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "temperatures",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "temperatures = list(weather.values())[:10]\n# Find the maximum temperature in the first 10 days\nmax_temp = max(temperatures)\n# Print the result\nprint(\"Max temperature -->\", max_temp)",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "max_temp",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.hash_table_excercise",
-        "description": "DSA.Data Structures.hash_table_excercise",
-        "peekOfCode": "max_temp = max(temperatures)\n# Print the result\nprint(\"Max temperature -->\", max_temp)",
-        "detail": "DSA.Data Structures.hash_table_excercise",
-        "documentation": {}
-    },
-    {
-        "label": "Queue",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.queue",
-        "description": "DSA.Data Structures.queue",
-        "peekOfCode": "class Queue:\n    \"\"\"\n    A simple queue implementation using deque from the collections module.\n    It supports standard queue operations like enqueue, dequeue,\n    checking if the queue is empty, and getting the queue size.\n    \"\"\"\n    def __init__(self):\n        # Initialize the queue with an empty deque.\n        # deque is a high-performance list for adding/removing elements from both ends.\n        self.buffer = deque()",
-        "detail": "DSA.Data Structures.queue",
-        "documentation": {}
-    },
-    {
-        "label": "binary_writer",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.queue",
-        "description": "DSA.Data Structures.queue",
-        "peekOfCode": "def binary_writer(number):\n    \"\"\"\n    Generates binary numbers from 1 to 'number' using a queue-based approach.\n    This approach generates binary numbers in the order by enqueuing and dequeuing.\n    Args:\n        number (int): The number of binary numbers to generate.\n    \"\"\"\n    queue = Queue()\n    # Start with the binary number '1'\n    queue.enqueue(\"1\")",
-        "detail": "DSA.Data Structures.queue",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.queue",
-        "description": "DSA.Data Structures.queue",
-        "peekOfCode": "def main():\n    \"\"\"\n    Demonstrates the use of the Queue class with enqueue, dequeue, size,\n    and empty checks, along with binary number generation and threaded food order simulation.\n    \"\"\"\n    # Create a new queue instance\n    queue = Queue()\n    # Enqueue elements\n    print(\"Enqueuing elements:\")\n    queue.enqueue(10)",
-        "detail": "DSA.Data Structures.queue",
-        "documentation": {}
-    },
-    {
-        "label": "Node",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.single_ll",
-        "description": "DSA.Data Structures.single_ll",
-        "peekOfCode": "class Node:\n    \"\"\"\n    Represents a single node in the linked list.\n    Attributes:\n        data: The data value stored in the node.\n        next: A reference to the next node in the linked list.\n    \"\"\"\n    def __init__(self, data, next=None):\n        self.data = data\n        self.next = next",
-        "detail": "DSA.Data Structures.single_ll",
-        "documentation": {}
-    },
-    {
-        "label": "LinkedList",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.single_ll",
-        "description": "DSA.Data Structures.single_ll",
-        "peekOfCode": "class LinkedList:\n    \"\"\"\n    Implements a singly linked list with various utility methods for insertion, deletion, and traversal.\n    Attributes:\n        head: Points to the first node in the linked list.\n    \"\"\"\n    def __init__(self):\n        self.head = None  # Initialize an empty linked list\n    def insert_at_beg(self, data):\n        \"\"\"",
-        "detail": "DSA.Data Structures.single_ll",
-        "documentation": {}
-    },
-    {
-        "label": "Stack",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.stack",
-        "description": "DSA.Data Structures.stack",
-        "peekOfCode": "class Stack(Generic[T]):\n    def __init__(self):\n        \"\"\"Initialize the stack with an empty deque container.\"\"\"\n        # A deque is a double-ended queue, providing fast append and pop operations from both ends.\n        # It's ideal for implementing a stack since both push and pop operations are O(1) in a deque.\n        self._container = deque()\n    def push(self, val: T) -> None:\n        \"\"\"\n        Push a value onto the stack.\n        Args:",
-        "detail": "DSA.Data Structures.stack",
-        "documentation": {}
-    },
-    {
-        "label": "T",
-        "kind": 5,
-        "importPath": "DSA.Data Structures.stack",
-        "description": "DSA.Data Structures.stack",
-        "peekOfCode": "T = TypeVar(\"T\")\nclass Stack(Generic[T]):\n    def __init__(self):\n        \"\"\"Initialize the stack with an empty deque container.\"\"\"\n        # A deque is a double-ended queue, providing fast append and pop operations from both ends.\n        # It's ideal for implementing a stack since both push and pop operations are O(1) in a deque.\n        self._container = deque()\n    def push(self, val: T) -> None:\n        \"\"\"\n        Push a value onto the stack.",
-        "detail": "DSA.Data Structures.stack",
-        "documentation": {}
-    },
-    {
-        "label": "TreeNode",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "class TreeNode:\n    def __init__(self, data):\n        \"\"\"Initialize a tree node with data, children, and a parent.\"\"\"\n        self.data = data\n        self.children = []\n        self.parent = None\n    def add_child(self, child):\n        \"\"\"Add a child node to the current node.\"\"\"\n        child.parent = self\n        self.children.append(child)",
-        "detail": "DSA.Data Structures.tree",
-        "documentation": {}
-    },
-    {
-        "label": "HierarchyTreeNode",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "class HierarchyTreeNode:\n    def __init__(self, name, designation):\n        \"\"\"Initialize a tree node with a name, designation, children, and a parent.\"\"\"\n        self.name = name\n        self.designation = designation\n        self.children = []\n        self.parent = None\n    def add_child(self, child):\n        \"\"\"Add a child node to the current node.\"\"\"\n        child.parent = self",
-        "detail": "DSA.Data Structures.tree",
-        "documentation": {}
-    },
-    {
-        "label": "LocationTreeNode",
-        "kind": 6,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "class LocationTreeNode(TreeNode):\n    def print_tree(self, depth):\n        \"\"\"Print the tree structure up to the specified depth.\"\"\"\n        if self.get_level() <= depth:\n            prefix = \" \" * self.get_level() * 3 + \"|__\" if self.parent else \"\"\n            print(prefix + self.data)\n        for child in self.children:\n            child.print_tree(depth)\ndef build_location_tree():\n    \"\"\"Build and return a tree representing geographical locations.\"\"\"",
-        "detail": "DSA.Data Structures.tree",
-        "documentation": {}
-    },
-    {
-        "label": "build_product_tree",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "def build_product_tree():\n    \"\"\"Build and display a tree representing product categories.\"\"\"\n    root = TreeNode(\"Electronics\")\n    # Adding categories and products\n    laptop = TreeNode(\"Laptop\")\n    laptop.add_child(TreeNode(\"Mac\"))\n    laptop.add_child(TreeNode(\"Surface\"))\n    laptop.add_child(TreeNode(\"Thinkpad\"))\n    cellphone = TreeNode(\"Cell Phone\")\n    cellphone.add_child(TreeNode(\"iPhone\"))",
-        "detail": "DSA.Data Structures.tree",
-        "documentation": {}
-    },
-    {
-        "label": "build_management_tree",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "def build_management_tree():\n    \"\"\"Build and return a tree representing a company hierarchy.\"\"\"\n    # CTO Hierarchy\n    infra_head = HierarchyTreeNode(\"Vishwa\", \"Infrastructure Head\")\n    infra_head.add_child(HierarchyTreeNode(\"Dhaval\", \"Cloud Manager\"))\n    infra_head.add_child(HierarchyTreeNode(\"Abhijit\", \"App Manager\"))\n    cto = HierarchyTreeNode(\"Chinmay\", \"CTO\")\n    cto.add_child(infra_head)\n    cto.add_child(HierarchyTreeNode(\"Aamir\", \"Application Head\"))\n    # HR hierarchy",
-        "detail": "DSA.Data Structures.tree",
-        "documentation": {}
-    },
-    {
-        "label": "build_location_tree",
-        "kind": 2,
-        "importPath": "DSA.Data Structures.tree",
-        "description": "DSA.Data Structures.tree",
-        "peekOfCode": "def build_location_tree():\n    \"\"\"Build and return a tree representing geographical locations.\"\"\"\n    root = LocationTreeNode(\"Global\")\n    india = LocationTreeNode(\"India\")\n    gujarat = LocationTreeNode(\"Gujarat\")\n    gujarat.add_child(LocationTreeNode(\"Ahmedabad\"))\n    gujarat.add_child(LocationTreeNode(\"Baroda\"))\n    karnataka = LocationTreeNode(\"Karnataka\")\n    karnataka.add_child(LocationTreeNode(\"Bangluru\"))\n    karnataka.add_child(LocationTreeNode(\"Mysore\"))",
-        "detail": "DSA.Data Structures.tree",
         "documentation": {}
     },
     {
@@ -778,6 +206,69 @@
         "documentation": {}
     },
     {
+        "label": "two_pointer",
+        "kind": 2,
+        "importPath": "python.001_two_sum",
+        "description": "python.001_two_sum",
+        "peekOfCode": "def two_pointer(nums, target):\n    \"\"\"\n    Brute-force approach using nested loops.\n    Finds two numbers in nums that sum up to the target.\n    Time Complexity: O(n^2) - Due to the nested loops iterating over all pairs.\n    Space Complexity: O(1) - No extra space used apart from input storage.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
+        "detail": "python.001_two_sum",
+        "documentation": {}
+    },
+    {
+        "label": "using_hash_table",
+        "kind": 2,
+        "importPath": "python.001_two_sum",
+        "description": "python.001_two_sum",
+        "peekOfCode": "def using_hash_table(nums, target):\n    \"\"\"\n    Optimized approach using a hash table (dictionary).\n    Finds two numbers in nums that sum up to the target in linear time.\n    Time Complexity: O(n) - We traverse the list once.\n    Space Complexity: O(n) - We store elements in a dictionary.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
+        "detail": "python.001_two_sum",
+        "documentation": {}
+    },
+    {
+        "label": "valid_parentheses",
+        "kind": 2,
+        "importPath": "python.002_valid_parentheses",
+        "description": "python.002_valid_parentheses",
+        "peekOfCode": "def valid_parentheses(string: str):\n    stack = []\n    bracket_map = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n    for char in string:\n        if char in bracket_map:\n            if stack and stack[-1] == bracket_map[char]:\n                stack.pop()\n            else:\n                return False\n        else:",
+        "detail": "python.002_valid_parentheses",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "python.003_merge_two_sorted_lists",
+        "description": "python.003_merge_two_sorted_lists",
+        "peekOfCode": "class Solution:\n    def mergeTwoLists(\n        self, list1: Optional[ListNode], list2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        k = ListNode()\n        i = k\n        while list1 and list2:\n            if list1.val < list2.val:\n                i.next = list1\n                list1 = list1.next",
+        "detail": "python.003_merge_two_sorted_lists",
+        "documentation": {}
+    },
+    {
+        "label": "climbStairs",
+        "kind": 2,
+        "importPath": "python.004_climbing_stairs",
+        "description": "python.004_climbing_stairs",
+        "peekOfCode": "def climbStairs(n: int) -> int:\n    if n <= 1 or n >= 45:\n        return\n    first, second = 1, 2\n    for _ in range(3, n + 1):\n        first, second = second, first + second\n    return second\nif __name__ == \"__main__\":\n    climbStairs(4)",
+        "detail": "python.004_climbing_stairs",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "python.005_same_tree",
+        "description": "python.005_same_tree",
+        "peekOfCode": "class Solution:\n    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:\n        if not p and not q:\n            return True\n        if not p or not q:\n            return False\n        if p.val != q.val:\n            return False\n        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)",
+        "detail": "python.005_same_tree",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "python.006_maximum_depth_of_binary_tree",
+        "description": "python.006_maximum_depth_of_binary_tree",
+        "peekOfCode": "class Solution:\n    def maxDepth(self, root: Optional[TreeNode]) -> int:\n        if not root:\n            return 0\n        left_max = self.maxDepth(root.left)\n        right_max = self.maxDepth(root.right)\n        return 1 + max(left_max, right_max)",
+        "detail": "python.006_maximum_depth_of_binary_tree",
+        "documentation": {}
+    },
+    {
         "label": "gcdOfStrings",
         "kind": 2,
         "importPath": "python.GCD_string",
@@ -802,24 +293,6 @@
         "description": "python.Maximum Average Subarray I",
         "peekOfCode": "def find_max_average(nums, k):\n    # Step 1: Calculate the sum of the first window of size k\n    window_sum = sum(nums[:k])  # Initial window: nums[0] to nums[k-1]\n    max_sum = window_sum  # Store the maximum sum found so far\n    # Step 2: Slide the window through the array from index k to the end\n    for i in range(k, len(nums)):\n        # Remove the element that is going out of the window (nums[i - k])\n        # Add the new element that is coming into the window (nums[i])\n        window_sum += nums[i] - nums[i - k]\n        # Update max_sum if the new window_sum is greater",
         "detail": "python.Maximum Average Subarray I",
-        "documentation": {}
-    },
-    {
-        "label": "Solution",
-        "kind": 6,
-        "importPath": "python.Merge Two Sorted Lists",
-        "description": "python.Merge Two Sorted Lists",
-        "peekOfCode": "class Solution:\n    def mergeTwoLists(\n        self, list1: Optional[ListNode], list2: Optional[ListNode]\n    ) -> Optional[ListNode]:\n        k = ListNode()\n        i = k\n        while list1 and list2:\n            if list1.val < list2.val:\n                i.next = list1\n                list1 = list1.next",
-        "detail": "python.Merge Two Sorted Lists",
-        "documentation": {}
-    },
-    {
-        "label": "valid_parentheses",
-        "kind": 2,
-        "importPath": "python.Valid Parentheses",
-        "description": "python.Valid Parentheses",
-        "peekOfCode": "def valid_parentheses(string: str):\n    stack = []\n    bracket_map = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n    for char in string:\n        if char in bracket_map:\n            if stack and stack[-1] == bracket_map[char]:\n                stack.pop()\n            else:\n                return False\n        else:",
-        "detail": "python.Valid Parentheses",
         "documentation": {}
     },
     {
@@ -910,24 +383,6 @@
         "description": "python.rotate_array",
         "peekOfCode": "def rotate_array(nums: list, k: int):\n    \"\"\"\n    Optimized approach: Rotate the array using slicing.\n    Time Complexity: O(n) - Only two slicing operations.\n    Space Complexity: O(n) - Creates a new list before modifying nums.\n    \"\"\"\n    k = k % len(nums)  # Handle cases where k > len(nums)\n    nums[:] = nums[-k:] + nums[:-k]  # Move last k elements to the front\nif __name__ == \"__main__\":\n    # Brute-force method",
         "detail": "python.rotate_array",
-        "documentation": {}
-    },
-    {
-        "label": "two_pointer",
-        "kind": 2,
-        "importPath": "python.two_sum",
-        "description": "python.two_sum",
-        "peekOfCode": "def two_pointer(nums, target):\n    \"\"\"\n    Brute-force approach using nested loops.\n    Finds two numbers in nums that sum up to the target.\n    Time Complexity: O(n^2) - Due to the nested loops iterating over all pairs.\n    Space Complexity: O(1) - No extra space used apart from input storage.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
-        "detail": "python.two_sum",
-        "documentation": {}
-    },
-    {
-        "label": "using_hash_table",
-        "kind": 2,
-        "importPath": "python.two_sum",
-        "description": "python.two_sum",
-        "peekOfCode": "def using_hash_table(nums, target):\n    \"\"\"\n    Optimized approach using a hash table (dictionary).\n    Finds two numbers in nums that sum up to the target in linear time.\n    Time Complexity: O(n) - We traverse the list once.\n    Space Complexity: O(n) - We store elements in a dictionary.\n    :param nums: List[int] - Input list of numbers.\n    :param target: int - Target sum.\n    :return: List[int] - Indices of two numbers that sum up to the target.\n    \"\"\"",
-        "detail": "python.two_sum",
         "documentation": {}
     }
 ]
